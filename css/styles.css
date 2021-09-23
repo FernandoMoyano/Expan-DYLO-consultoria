@@ -66,6 +66,7 @@ button a:hover{
   font-size: 2rem;
   padding: none;
   margin-left: 1rem;
+  margin-right: 2rem;
   margin-bottom: 0.5rem;
 }
 a.nav-link{

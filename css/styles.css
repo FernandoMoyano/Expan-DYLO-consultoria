@@ -60,9 +60,25 @@ button a:hover{
 /*                                    INDEX                                  */
 /* -------------------------------------------------------------------------- */
 
+/* ---------------------------- menu hamburguesa ---------------------------- */
+
+.navbar-brand{
+  font-size: 2rem;
+  padding: none;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+a.nav-link{
+  font-size: 21px;
+  padding: 16px;
+  margin-right: 3rem;
+  
+}
+
+
 /* --------------------------------- header nav--------------------------------- */
 
-.elements-nav {
+/* .elements-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,6 +127,8 @@ p {
 .nav-menu ul li a:hover {
   color: black;
 }
+ */
+
 
 .cool-link::after {
   content: "";
@@ -125,6 +143,7 @@ p {
   width: 100%;
   transition: width 0.3s;
 }
+
 
 button {
   background-color: var(--color-button);
@@ -174,14 +193,11 @@ button a{
   height: 100vh;
   justify-content: space-around;
   margin: auto;
-  padding: 5rem 3rem;
+ /*  padding: 5rem 3rem; */
   overflow: hidden;
 }
 
-.header-content img {
-  width: 95%;
-  height: auto;
-}
+
 
 .header-item {
   display: flex;
@@ -202,9 +218,9 @@ button a{
   margin-bottom: 2rem;
 }
 
-.section {
+/* .section {
   margin: 4rem 4rem;
-}
+} */
 
 /* ------------------------------ Algunos sservicios ------------------------------------- */
 
@@ -864,6 +880,7 @@ p {
 /* -------------------------------------------------------------------------- */
 
 @media screen and (max-width:1600px){
+  
   .elements-nav{
     display: flex;
     flex-direction: column;
@@ -872,6 +889,7 @@ p {
     height: auto;
     
   }
+
   .logo{
     text-align: center;
   }
@@ -879,15 +897,7 @@ p {
   .header-content{
     display: flex;
     width: 90%;
-    margin-top: 3rem;
-  }
-  
-  .header-item{
-    width: 80%;
-  }
-  
-  .header-item h1{
-    font-size: 3rem;
+   /*  margin-top: 3rem; */
   }
   
   .servicios-principales{
@@ -938,13 +948,206 @@ p {
     width: 80%;
   }
   }
+/* ------------------------------------ 8 ----------------------------------- */
 
-  @media screen and (max-width:768px){
-  
-    .header-content{
-      padding: 4rem 3rem;
-      margin:auto;
-    }
+@media screen and (max-width:1199.98px){
+
+  .header-content{
+    display: flex;
+    justify-content: space-around;
   }
 
+  .header-item{
+    width: 60%;
+  }
 
+  .header-item img{
+    width: 90%;
+    height: auto;
+  }
+
+}
+
+  @media screen and (max-width:991.98px){
+
+    .header-item{
+      width: 100%;
+      height: auto;
+    }
+    
+     h1{
+      font-size: 3rem;
+    }
+
+    h2{
+      font-size: 1.5rem;
+    }
+    button.navbar-toggler{
+    width: 2rem;
+    height: 2rem;
+    }
+
+    button.navbar-toggler-icon{
+      width: 2rem;
+      height: 2rem;
+      }
+   
+  
+    .header-content{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+    
+    }
+
+    .header-item{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: 1rem auto;
+      max-width: 100%;
+    }
+  }
+/* ------------------------------------ 8 ----------------------------------- */
+
+  @media screen and (max-width:767.98px){
+
+  /*   .header-item{
+      width: 100%;
+      height: auto;
+    } */
+    
+     h1{
+      font-size: 2rem;
+    }
+
+    h2{
+      font-size: 1.5rem;
+    }
+    button.navbar-toggler{
+    width: 2rem;
+    height: 2rem;
+    }
+
+    button.navbar-toggler-icon{
+      width: 2rem;
+      height: 2rem;
+      }
+
+      button{
+        width: 150px;
+        height: 3rem;
+        font-size: 1rem;
+      }
+      
+      button{
+        width: 150px;
+        height: 3rem;
+        font-size: 1rem;
+      }
+      button a{
+        font-size: 1rem;
+      }
+   
+  
+    .header-content{
+      display: flex;
+      width: 80%;
+      height: auto;
+      flex-direction: column;
+      justify-content:space-evenly;
+     /*  margin-top: 15rem; */
+   
+    
+    }
+
+    .header-item{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: 1rem auto;
+      max-width: 100%;
+    }
+
+    
+    .header-item img{
+      width: 60%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .header-item p{
+      margin-bottom: 1rem;
+    }
+
+    .servicio img{
+     width: 200px; 
+  }
+  }
+/* ------------------------------------ 8 ----------------------------------- */
+
+  @media screen and (max-width:575.98px){
+
+     h1{
+      font-size: 2rem;
+    }
+
+    h2{
+      font-size: 1.5rem;
+    }
+    button.navbar-toggler{
+      width: 2rem;
+      height: 2rem;
+    }
+
+    button.navbar-toggler-icon{
+      width: 2rem;
+      height: 2rem;
+      }
+   
+  
+    .header-content{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+    
+    }
+
+
+
+    .header-item{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: auto;
+      max-width: 100%;
+    }
+
+    
+    .header-item img{
+      /* margin-top: 2rem; */
+      width: 300px;
+      height: 300px;
+      max-width: 100%;
+   
+    }
+
+    .servicio img{
+     width: 200px; 
+    }
+
+    .title-section{
+      margin-top:0;
+    }
+  }

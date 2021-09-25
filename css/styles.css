@@ -49,11 +49,23 @@ h2 {
 }
 
 a :hover{
-  color: black;
+  color: white;
 }
 
 button a:hover{
   color: black;
+}
+
+::-webkit-scrollbar{
+  width: 9px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-button);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--text-button);
+  border-radius: 80px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -147,27 +159,27 @@ p {
 
 
 button {
-  background-color: var(--color-button);
+ /*  background-color: var(--color-button); */
   width: 176px;
   height: 4rem;
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 0 0 1px 1px var(--color-button) inset;
-  border-color: black;
+  box-shadow: 0 0 1px 1px  black inset;
+  border-color:white;
   transition: box-shadow 0.1s ease-in-out;
-  color: black;
+  color: white;
 }
 
 button:hover {
-  box-shadow: 0 0 2px 0 black inset, 0 0 1px 1px black;
-  color: black;
+  box-shadow: 0 0 2px 0 white, 0 0 1px 1px white;
+  color: white;
   background-color: transparent;
   border: thin black;
 }
 
 button a{
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 21px;
 }
@@ -219,9 +231,9 @@ button a{
   margin-bottom: 2rem;
 }
 
-/* .section {
+.section {
   margin: 4rem 4rem;
-} */
+}
 
 /* ------------------------------ Algunos sservicios ------------------------------------- */
 
@@ -246,7 +258,7 @@ button a{
 
 .servicio:hover {
   box-shadow: -1px -7px 86px -4px rgba(0, 0, 0, 0.55);
-  transform: translateY(-3%);
+  
 }
 
 .servicio p {
@@ -315,6 +327,16 @@ button a{
   text-align: center;
   color: var(--color-text);
 }
+
+.row{
+  margin: 0;
+}
+
+.col{
+  margin:2rem
+}
+
+
 
 /* ---------------------------------- A quienes nos dirigimos ------------------------ */
 .orientacion {

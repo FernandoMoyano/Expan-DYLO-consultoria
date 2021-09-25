@@ -257,13 +257,13 @@ button a{
   padding: 1rem 1rem 0 2rem;
   margin: 2rem 1rem ;
   text-align: center;
-  transition: all 400ms ease;
+  /* transition: all 400ms ease; */
 }
 
-.servicio:hover {
+/* .servicio:hover {
   box-shadow: -1px -7px 86px -4px rgba(0, 0, 0, 0.55);
   
-}
+} */
 
 .servicio p {
   text-align: center;
@@ -1183,4 +1183,17 @@ p {
     .servicios{
       width: 100%;
     }
+    .orientacion {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+          "h2 h2"
+          "paragraph paragraph"
+          "personales personales"
+          "pymes      pymes";
+      column-gap: 3rem;
+      row-gap: 1rem;
+      margin-bottom: 2rem;
+  }
   }

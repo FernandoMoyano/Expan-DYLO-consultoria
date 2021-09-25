@@ -84,8 +84,7 @@ button a:hover{
 a.nav-link{
   font-size: 21px;
   padding: 16px;
-  margin-right: 3rem;
-  
+  margin-right: 3rem;  
 }
 
 
@@ -159,7 +158,7 @@ p {
 
 
 button {
- /*  background-color: var(--color-button); */
+ /* background-color: var(--color-button); */
   width: 176px;
   height: 4rem;
   border: none;
@@ -184,7 +183,12 @@ button a{
   font-size: 21px;
 }
 
-/* ----------------------------------- --header-content ---------------------------- */
+.btn-dark{
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+/*------------------------------------- --header-content -------------------------------*/
 
 /* .header-content {
   display: grid;
@@ -1038,7 +1042,7 @@ p {
 
   @media screen and (max-width:767.98px){
 
-  /*   .header-item{
+   /*.header-item{
       width: 100%;
       height: auto;
     } */
@@ -1053,6 +1057,7 @@ p {
     button.navbar-toggler{
     width: 2rem;
     height: 2rem;
+    margin-right: 1rem;
     }
 
     button.navbar-toggler-icon{
@@ -1117,7 +1122,7 @@ p {
 /* ------------------------------------ 8 ----------------------------------- */
 
   @media screen and (max-width:575.98px){
-
+ 
      h1{
       font-size: 2rem;
     }
@@ -1137,20 +1142,21 @@ p {
    
   
     .header-content{
-      width: 90%;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content:space-evenly;
+      justify-content:center;
+      margin-top: 2rem;
     
     }
 
 
 
     .header-item{
-      width: 100%;
+      width: 80%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       flex-wrap: nowrap;
       margin: auto;
@@ -1160,6 +1166,7 @@ p {
     
     .header-item img{
       /* margin-top: 2rem; */
+      margin: auto;
       width: 300px;
       height: 300px;
       max-width: 100%;
@@ -1172,5 +1179,8 @@ p {
 
     .title-section{
       margin-top:0;
+    }
+    .servicios{
+      width: 100%;
     }
   }

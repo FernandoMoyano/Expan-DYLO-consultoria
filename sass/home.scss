@@ -1,0 +1,165 @@
+.header-content {
+	display: flex;
+	width: 90%;
+	height: 100vh;
+	justify-content: space-around;
+	margin: auto;
+	/*  padding: 5rem 3rem; */
+	overflow: hidden;
+
+	.header-item {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0, 3rem;
+		margin-bottom: 1rem;
+
+		.mas-servicios {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+
+			.btn {
+				position: relative;
+				display: inline-block;
+				width: auto;
+				height: auto;
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				margin: 0px 25px 15px;
+				min-width: 170px;
+			}
+
+			.btn-1::before {
+				background-color: rgb(28, 31, 30);
+				transition: 0.3s ease-out;
+				border-radius: 20px;
+			}
+			.btn-1 a {
+				color: rgb(255, 255, 255);
+				border: 1px solid rgb(28, 31, 30);
+				transition: 0.2s 0.1s;
+			}
+			.btn-1 a:hover {
+				color: rgb(28, 31, 30);
+				transition: 0.2s 0.1s;
+			}
+			/* 4. hover-filled-slide-right */
+			.btn.hover-filled-slide-right::before {
+				top: 0;
+				bottom: 0;
+				right: 0;
+				height: 100%;
+				width: 100%;
+			}
+			.btn.hover-filled-slide-right:hover::before {
+				width: 0%;
+			}
+		}
+	}
+}
+
+.title-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.servicios-principales {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: auto;
+	justify-content: space-between;
+	margin-top: 6rem;
+
+	.servicio {
+		flex-direction: column;
+		align-items: center;
+		width: 25%;
+		height: auto;
+		padding: 1rem 1rem 0 2rem;
+		margin: 2rem 1rem;
+		text-align: center;
+	}
+
+	.shadow-left {
+		box-shadow: -2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+	}
+
+	.card-border {
+		border-radius: 15px;
+	}
+}
+
+.mas-servicios {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.section {
+	margin: 4rem 4rem;
+}
+
+.orientacion {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		'h2         h2'
+		'paragraph  paragraph'
+		'personales pymes';
+	column-gap: 3rem;
+	row-gap: 1rem;
+	margin-bottom: 2rem;
+
+	h2,
+	p {
+		text-align: center;
+		margin: 1rem 2rem;
+	}
+
+	img {
+		width: 80%;
+		height: auto;
+	}
+
+	.orientacion-title {
+		grid-area: h2;
+	}
+	.orientacion-paragraph {
+		grid-area: paragraph;
+	}
+
+	.orientacion-personales {
+		grid-area: personales;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+
+		.shadow-right {
+			box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+		}
+	}
+
+	.orientacion-pymes {
+		grid-area: pymes;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+}

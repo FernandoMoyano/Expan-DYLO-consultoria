@@ -24,16 +24,13 @@
   list-style: none;
   text-decoration: none;
   list-style: none;
+  
 }
+
 
 html {
   font-family: var(--font);
   scroll-behavior: smooth;
-}
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
 }
 
 body {
@@ -48,13 +45,19 @@ h2 {
   font-size: 2.5rem;
 }
 
-a :hover{
+a{
+  color: white;
+}
+
+/* a :hover{
   color: white;
 }
 
 button a:hover{
-  color: black;
-}
+  color:white;
+} */
+
+
 
 ::-webkit-scrollbar{
   width: 9px;
@@ -88,10 +91,10 @@ a.nav-link{
 }
 
 
-/* --------------------------------- header nav--------------------------------- */
+/* --------------------------------- buttons--------------------------------- */
 
-button {
- background-color: var(--color-button);
+/* button {
+ background-color: var(--text-button);
   width: 176px;
   height: 4rem;
   border: none;
@@ -114,7 +117,70 @@ button a{
   color: white;
   text-decoration: none;
   font-size: 21px;
+} */
+
+::before,
+::after {
+  position: absolute;
+  content: "";
 }
+
+:active, :hover, :focus {
+  outline: 0!important;
+  outline-offset: 0;
+}
+
+
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto; height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px 25px 15px;
+  min-width: 170px;
+  
+}
+  .btn a {         
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+/*--- btn-1 ---*/
+.btn-1::before {
+  background-color: rgb(28, 31, 30);
+  transition: 0.3s ease-out;
+  border-radius: 20px;
+}
+.btn-1 a {
+  color: rgb(255,255,255);
+  border: 1px solid rgb(28, 31, 30);
+  transition: 0.2s 0.1s;
+ 
+}
+.btn-1 a:hover {
+  color: rgb(28, 31, 30);
+  transition: 0.2s 0.1s;
+}
+/* 4. hover-filled-slide-right */
+.btn.hover-filled-slide-right::before {
+  top:0; bottom: 0; right: 0;
+  height: 100%; width: 100%;
+  
+}
+.btn.hover-filled-slide-right:hover::before {
+  width: 0%;
+}
+
+/* ------------------------------ btn bootstrap ---------------------------------- */
 
 .btn-dark{
   border-radius: 20px;
@@ -203,6 +269,99 @@ button a{
   margin-top: 2rem;
 }
 
+
+.mas-servicios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+ 
+
+}
+/* ------------------------------ ventana modal ----------------------------------- */
+/*Efecto*/
+.modalmask {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalmask:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox{
+  width: 400px;
+  position: relative;
+  padding: 5px 20px 13px 20px;
+  background: #fff;
+  border-radius:3px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+   
+}
+
+/*Movimientos*/
+.movedown {
+  margin: 0 auto;
+}
+.rotate {
+  margin: 10% auto;
+  -webkit-transform: scale(-5,-5);
+  transform: scale(-5,-5);
+}
+.resize {
+  margin: 10% auto;
+  width:0;
+  height:0;
+
+}
+.modalmask:target .movedown{       
+  margin:10% auto;
+}
+.modalmask:target .rotate{     
+  transform: rotate(360deg) scale(1,1);
+      -webkit-transform: rotate(360deg) scale(1,1);
+}
+
+.modalmask:target .resize{
+  width:400px;
+  height:200px;
+}
+
+/*Boton de cerrar*/
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: 1px;
+  text-align: center;
+  top: 1px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius:3px;
+
+}
+
+.close:hover {
+  background: #FAAC58;
+  color:#222;
+}
 /* ------------------------------- nuestros clientes dicen ------------------------------ */
 
 .container-testimonios {
@@ -602,13 +761,6 @@ p {
   opacity: 0.6;
   background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
 }
-/* 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-  max-width: var(--max-width);
-} */
 
 .avatar {
   border-radius: 50%;
@@ -657,7 +809,6 @@ p {
 
 .carousel .slides {
   padding-left: 0;
-  /* 100% por cada slide */
   width: 400%;
   display: flex;
   list-style: none;
@@ -932,17 +1083,7 @@ p {
     h2{
       font-size: 1.5rem;
     }
-    button.navbar-toggler{
-    width: 2rem;
-    height: 2rem;
-    }
 
-    button.navbar-toggler-icon{
-      width: 2rem;
-      height: 2rem;
-      }
-   
-  
     .header-content{
       display: flex;
       flex-direction: column;
@@ -977,33 +1118,8 @@ p {
     h2{
       font-size: 1.5rem;
     }
-    button.navbar-toggler{
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
-    }
 
-    button.navbar-toggler-icon{
-      width: 2rem;
-      height: 2rem;
-      }
 
-      button{
-        width: 150px;
-        height: 3rem;
-        font-size: 1rem;
-      }
-      
-      button{
-        width: 150px;
-        height: 3rem;
-        font-size: 1rem;
-      }
-      button a{
-        font-size: 1rem;
-      }
-   
-  
     .header-content{
       display: flex;
       width: 80%;
@@ -1053,15 +1169,6 @@ p {
     h2{
       font-size: 1.5rem;
     }
-    button.navbar-toggler{
-      width: 2rem;
-      height: 2rem;
-    }
-
-    button.navbar-toggler-icon{
-      width: 2rem;
-      height: 2rem;
-      }
 
       .section{
         margin: 0%;
@@ -1194,5 +1301,8 @@ p {
   border: thin solid var(--background-ligth);
   border-radius: 20px;
   margin-bottom: 2rem;
+}
+.container{
+  width: 90%;
 }
   }

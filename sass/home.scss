@@ -163,3 +163,13 @@
 		margin-bottom: 2rem;
 	}
 }
+
+.container-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+	color: var(--text-button);
+	width: 100%;
+	height: 6rem;
+}

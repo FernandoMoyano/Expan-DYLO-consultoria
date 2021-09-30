@@ -169,9 +169,9 @@
 .orientacion {
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [2];
+	-ms-grid-columns: (1fr) 2;
 	grid-template-columns: repeat(2, 1fr);
-	-ms-grid-rows: (auto) [3];
+	-ms-grid-rows: (auto) 3;
 	grid-template-rows: repeat(3, auto);
 	grid-template-areas:
 		'h2         h2'
@@ -196,7 +196,9 @@
 
 .orientacion .orientacion-title {
 	-ms-grid-row: 1;
+  grid-row: 1;
 	-ms-grid-column: 1;
+  grid-column: 1;
 	-ms-grid-column-span: 2;
 	grid-area: h2;
 }
@@ -204,13 +206,17 @@
 .orientacion .orientacion-paragraph {
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
 	-ms-grid-column-span: 2;
 	grid-area: paragraph;
 }
 
 .orientacion .orientacion-personales {
 	-ms-grid-row: 3;
+  grid-row: 3;
 	-ms-grid-column: 1;
+  grid-column: 1;
 	grid-area: personales;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -235,7 +241,9 @@
 
 .orientacion .orientacion-pymes {
 	-ms-grid-row: 3;
+  grid-row: 3;
 	-ms-grid-column: 2;
+  grid-column: 2;
 	grid-area: pymes;
 	display: -webkit-box;
 	display: -ms-flexbox;

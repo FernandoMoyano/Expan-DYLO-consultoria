@@ -76,7 +76,7 @@ button a:hover{
 .navbar-brand {
 	font-size: 2rem;
 	padding: none;
-	margin-left: 4rem;
+	margin-left: 1rem;
 	margin-right: 2rem;
 	margin-bottom: 0.5rem;
 }
@@ -244,7 +244,7 @@ a.nav-link {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 }
-/* ------------------------------ ventana modal ----------------------------------- */
+/* ----------------------------------- ventana modal ----------------------------------- */
 /*Efecto*/
 .modalmask {
 	position: fixed;
@@ -268,7 +268,7 @@ a.nav-link {
 
 /*Formato de la ventana*/
 .modalbox {
-	width: 400px;
+	width: 800px;
 	position: relative;
 	padding: 5px 20px 13px 20px;
 	background: #fff;
@@ -660,7 +660,7 @@ p {
 	background-attachment: fixed;
 }
 
-/* ------------------------ equipo multidisiplinario -------------------------------- */
+/* -------------------------------- equipo multidisiplinario -------------------------------- */
 
 .container-multidisiplinario {
 	display: flex;
@@ -700,7 +700,7 @@ p {
 	color: var(--color-text);
 }
 
-/* --------------------------------- carousel --------------------------------- */
+/* ------------------------------------- carousel --------------------------------- */
 
 .hero-image {
 	background-image: var(--hero-image);
@@ -844,7 +844,7 @@ p {
 	justify-content: space-around;
 	align-items: center;
 	border: thin solid lightgrey;
-	border-radius: 20px;
+	border-radius: 15px;
 	padding: 2rem;
 	background-image: linear-gradient(to left, #e6e6e6 0%, #bdbbbe 100%),
 		radial-gradient(
@@ -899,6 +899,10 @@ p {
 	margin-bottom: 2rem;
 }
 
+ #acepta{
+	width: 50px;
+	height: 20px;
+}
 .acepta input {
 	margin: auto;
 	width: 50%;
@@ -1158,9 +1162,10 @@ p {
 		flex-direction: column;
 		justify-content: center;
 		margin-top: 0%;
+		padding: 1rem;
 	}
 	.servicio p {
-		margin: 0%;
+		margin: 0rem;
 	}
 
 	.servicios {
@@ -1193,7 +1198,7 @@ p {
 		margin: auto;
 	}
 	.item-testimonio {
-		width: 100%;
+		width: 90%;
 	}
 	.img-testimonio {
 		width: 100%;
@@ -1217,6 +1222,7 @@ p {
 		grid-template-rows: repeat(8, auto);
 		column-gap: 2rem;
 		row-gap: 1rem;
+		
 	}
 
 	.sobre-nosotros img {
@@ -1225,7 +1231,7 @@ p {
 		margin: 2rem auto;
 	}
 	.section {
-		margin: 2rem;
+		margin: 0rem;
 	}
 	.container-multidisiplinario {
 		display: flex;
@@ -1245,4 +1251,27 @@ p {
 	.container {
 		width: 90%;
 	}
+
+	.container-contact{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.item-contact{
+		width: 90%;
+	}
+	.modalbox {
+		width: 320px;
+		position: relative;
+		padding: 5px 20px 13px 20px;
+		background: #fff;
+		border-radius: 3px;
+		-webkit-transition: all 500ms ease-in;
+		-moz-transition: all 500ms ease-in;
+		transition: all 500ms ease-in;
+	}
+
 }

@@ -151,6 +151,7 @@ a.nav-link {
 	width: 0%;
 }
 
+
 /* --------------------------------------- btn bootstrap ---------------------------------- */
 
 .btn-dark {
@@ -326,7 +327,7 @@ a.nav-link {
 }
 /* ------------------------------- nuestros clientes dicen ------------------------------ */
 
-.container-testimonios {
+/* .container-testimonios {
 	display: grid;
 	width: 90%;
 	grid-template-columns: repeat(2, 1fr);
@@ -337,14 +338,28 @@ a.nav-link {
 	justify-items: center;
 	align-items: center;
 	margin-bottom: 4rem;
+} */
+
+
+.container-testimonios {
+	display: flex;
+	width: 90%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+	align-items: center;
+	margin-bottom: 4rem;
 }
+
 
 .item-testimonio {
 	background-color: var(--text-button);
 	border: thin solid var(--background-ligth);
 	object-fit: cover;
 	border-radius: 20px;
-	width: 80%;
+	width: 40%;
+	margin: 2rem auto;
+	margin-bottom: 2rem;
 	height: 100%;
 	object-fit: cover;
 }
@@ -634,6 +649,13 @@ p {
 	margin: 0;
 	padding: 0;
 }
+.para-capacitacion{
+	text-align: center;
+}
+
+.capacitacion ul li{
+	color: white;
+}
 
 .title-section-capacitacion {
 	display: flex;
@@ -919,6 +941,7 @@ p {
 	width: 50%;
 	justify-content: space-around;
 	margin-bottom: 3rem;
+	
 }
 #submit {
 	width: 140px;
@@ -1192,13 +1215,21 @@ p {
 	}
 
 	.container-testimonios {
-		display: grid;
-		grid-template-columns: repeat(1, 100%);
-		grid-template-rows: auto;
+		display: flex;
+		flex-direction: column;
 		margin: auto;
 	}
 	.item-testimonio {
 		width: 90%;
+		background-color: var(--text-button);
+		border: thin solid var(--background-ligth);
+		object-fit: cover;
+		border-radius: 20px;
+		margin: 2rem auto;
+		margin-bottom: 2rem;
+		height: 100%;
+		object-fit: cover;
+		}
 	}
 	.img-testimonio {
 		width: 100%;
@@ -1273,5 +1304,8 @@ p {
 		-moz-transition: all 500ms ease-in;
 		transition: all 500ms ease-in;
 	}
+	#clear{
+		margin-right: 1rem;
+	}
 
-}
+

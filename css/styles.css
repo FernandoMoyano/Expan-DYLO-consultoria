@@ -1254,6 +1254,58 @@ p {
 			row-gap: 1rem;
 			
 		}
+
+		.sobre-nosotros img {
+			width: 100%;
+			height: auto;
+			margin: 2rem auto;
+		}
+		.section {
+			margin: 0rem;
+		}
+		.container-multidisiplinario {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	
+		.item-multidisiplinario {
+			width: 90%;
+			height: 100%;
+			object-fit: cover;
+			border: thin solid var(--background-ligth);
+			border-radius: 20px;
+			margin-bottom: 2rem;
+		}
+		.container {
+			width: 90%;
+		}
+	
+		.container-contact{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+	
+		.item-contact{
+			width: 90%;
+		}
+		.modalbox {
+			width: 320px;
+			position: relative;
+			padding: 5px 20px 13px 20px;
+			background: #fff;
+			border-radius: 3px;
+			-webkit-transition: all 500ms ease-in;
+			-moz-transition: all 500ms ease-in;
+			transition: all 500ms ease-in;
+		}
+		#clear{
+			margin-right: 1rem;
+		}
 	
 	
 	}

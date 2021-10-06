@@ -208,11 +208,13 @@ a {
 .orientacion {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (auto)[3];
+  -ms-grid-rows: (auto);
       grid-template-rows: repeat(3, auto);
-      grid-template-areas: 'h2         h2' 'paragraph  paragraph' 'personales pymes';
+      grid-template-areas: 'h2         h2'
+ 'paragraph  paragraph'
+ 'personales pymes';
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
   row-gap: 1rem;

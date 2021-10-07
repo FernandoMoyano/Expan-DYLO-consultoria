@@ -356,11 +356,13 @@ a {
 .orientacion {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (auto)[3];
+  -ms-grid-rows: (auto);
       grid-template-rows: repeat(3, auto);
-      grid-template-areas: 'h2         h2' 'paragraph  paragraph' 'personales pymes';
+      grid-template-areas: 'h2         h2'
+ 'paragraph  paragraph'
+ 'personales pymes';
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
   row-gap: 1rem;
@@ -369,7 +371,9 @@ a {
 
 .orientacion .orientacion-title {
   -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 1;
+  grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: h2;
   text-align: center;
@@ -377,14 +381,18 @@ a {
 
 .orientacion .orientacion-paragraph {
   -ms-grid-row: 2;
+  grid-row: 2;
   -ms-grid-column: 1;
+  grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: paragraph;
 }
 
 .orientacion .orientacion-personales {
   -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column: 1;
+  grid-column: 1;
   grid-area: personales;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,7 +427,9 @@ a {
 
 .orientacion .orientacion-pymes {
   -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column: 2;
+  grid-column: 2;
   grid-area: pymes;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,10 +529,14 @@ a.nav-link {
 .sobre-nosotros {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'grupo-especial  grupo-especial' 'para            para' 'item1           description1' 'description2    item2' 'item3           description3';
-  -ms-grid-columns: (1fr)[2];
+      grid-template-areas: 'grupo-especial  grupo-especial'
+ 'para            para'
+ 'item1           description1'
+ 'description2    item2'
+ 'item3           description3';
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (auto)[5];
+  -ms-grid-rows: (auto);
       grid-template-rows: repeat(5, auto);
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
@@ -541,7 +555,9 @@ a.nav-link {
 
 .sobre-nosotros .grupo-especial {
   -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 1;
+  grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: grupo-especial;
   -ms-grid-column-align: center;
@@ -567,7 +583,9 @@ a.nav-link {
 
 .sobre-nosotros .para {
   -ms-grid-row: 2;
+  grid-row: 2;
   -ms-grid-column: 1;
+  grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: para;
   -ms-grid-column-align: center;
@@ -579,7 +597,9 @@ a.nav-link {
 
 .nosotros-item1 {
   -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column: 1;
+  grid-column: 1;
   grid-area: item1;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -599,7 +619,9 @@ a.nav-link {
 
 .description1 {
   -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column: 2;
+  grid-column: 2;
   grid-area: description1;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -619,7 +641,9 @@ a.nav-link {
 
 .description2 {
   -ms-grid-row: 4;
+  grid-row: 4;
   -ms-grid-column: 1;
+  grid-column: 1;
   grid-area: description2;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -639,7 +663,9 @@ a.nav-link {
 
 .nosotros-item2 {
   -ms-grid-row: 4;
+  grid-row: 4;
   -ms-grid-column: 2;
+  grid-column: 2;
   grid-area: item2;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -659,7 +685,9 @@ a.nav-link {
 
 .nosotros-item3 {
   -ms-grid-row: 5;
+  grid-row: 5;
   -ms-grid-column: 1;
+  grid-column: 1;
   grid-area: item3;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -679,7 +707,9 @@ a.nav-link {
 
 .description3 {
   -ms-grid-row: 5;
+  grid-row: 5;
   -ms-grid-column: 2;
+  grid-column: 2;
   grid-area: description3;
   -ms-grid-column-align: center;
       justify-self: center;

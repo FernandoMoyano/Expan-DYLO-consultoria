@@ -1,0 +1,148 @@
+.hero-img-nosotros {
+	background-image: url(../assets/nosotros-img.jpg);
+	width: 100%;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+    .hero-img-content {
+        min-height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0.7;
+        background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+    }
+}
+
+.sobre-nosotros {
+	display: grid;
+	grid-template-areas:
+		'grupo-especial  grupo-especial'
+		'para            para'
+		'item1           description1'
+		'description2    item2'
+		'item3           description3';
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(5,auto);
+	column-gap: 2rem;
+	row-gap: 1rem;
+
+    .sobre-nosotros img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .sobre-nosotros h2,
+    p {
+        text-align: center;
+    }
+
+    .grupo-especial {
+        grid-area: grupo-especial;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .title-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .para {
+        grid-area: para;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+.nosotros-item1 {
+	grid-area: item1;
+	justify-self: center;
+	align-self: center;
+
+    .shadow-right {
+        box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+    }
+
+    .card-border {
+        border-radius: 15px;
+    }
+}
+
+
+.description1 {
+	grid-area: description1;
+	justify-self: center;
+	align-self: center;
+
+    .shadow-right {
+        box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+    }
+    
+    .card-border {
+        border-radius: 15px;
+    }
+}
+
+.description2 {
+	grid-area: description2;
+	justify-self: center;
+	align-self: center;
+
+    .shadow-right {
+        box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+    }
+    
+    .card-border {
+        border-radius: 15px;
+    }
+}
+
+.nosotros-item2 {
+	grid-area: item2;
+	justify-self: center;
+	align-self: center;
+
+    .shadow-right {
+        box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+    }
+    
+    .card-border {
+        border-radius: 15px;
+    }
+}
+
+.nosotros-item3 {
+	grid-area: item3;
+	justify-self: center;
+	align-self: center;
+
+    .shadow-right {
+        box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+    }
+    
+    .card-border {
+        border-radius: 15px;
+    }
+}
+
+.description3 {
+	grid-area: description3;
+	justify-self: center;
+	align-self: center;
+
+    .shadow-right {
+        box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+    }
+    
+    .card-border {
+        border-radius: 15px;
+    }
+}

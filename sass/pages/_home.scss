@@ -7,62 +7,75 @@
 	/*  padding: 5rem 3rem; */
 	overflow: hidden;
 
-	.header-item {
-		display: flex;
-		width: 100%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		padding: 0, 3rem;
-		margin-bottom: 1rem;
-	}
-
-		.mas-servicios {
+		.header-item {
 			display: flex;
+			width: 100%;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			margin-top: 3rem;
-			margin-bottom: 3rem;
+			text-align: center;
+			padding: 0, 3rem;
+			margin-bottom: 1rem;
+		}
 
-				.btn {
-					position: relative;
-					display: inline-block;
-					width: auto;
-					height: auto;
-					background-color: transparent;
-					border: none;
-					cursor: pointer;
-					margin: 0px 25px 15px;
-					min-width: 170px;
-				}
+			.mas-servicios {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 3rem;
+				margin-bottom: 3rem;
 
-				/*--- btn-1 ---*/
-				.btn-1::before {
-					background-color: rgb(28, 31, 30);
-					transition: 0.3s ease-out;
-					border-radius: 20px;
-				}
-				.btn-1 a {
-					color: rgb(255, 255, 255);
-					border: 1px solid rgb(28, 31, 30);
-					transition: 0.2s 0.1s;
-				}
-				.btn-1 a:hover {
-					color: rgb(28, 31, 30);
-					transition: 0.2s 0.1s;
-				}
-				/* 4. hover-filled-slide-right */
-				.btn.hover-filled-slide-right::before {
-					top: 0;
-					bottom: 0;
-					right: 0;
-					height: 100%;
-					width: 100%;
-				}
-				.btn.hover-filled-slide-right:hover::before {
-					width: 0%;
-				}
+					.btn {
+						position: relative;
+						display: inline-block;
+						width: auto;
+						height: auto;
+						background-color: transparent;
+						border: none;
+						cursor: pointer;
+						margin: 0px 25px 15px;
+						min-width: 170px;
+					}
+
+					.btn a {
+						position: relative;
+						display: inline-block;
+						font-size: 18px;
+						top: 0;
+						left: 0;
+						width: 100%;
+						padding: 15px 20px;
+						transition: 0.3s;
+						text-decoration: none;
+						border-radius: 20px;
+					}
+
+					/*--- btn-1 ---*/
+					.btn-1::before {
+						background-color: rgb(28, 31, 30);
+						transition: 0.3s ease-out;
+						border-radius: 20px;
+					}
+					.btn-1 a {
+						color: rgb(255, 255, 255);
+						border: 1px solid rgb(28, 31, 30);
+						transition: 0.2s 0.1s;
+					}
+					.btn-1 a:hover {
+						color: rgb(28, 31, 30);
+						transition: 0.2s 0.1s;
+					}
+					/* 4. hover-filled-slide-right */
+					.btn.hover-filled-slide-right::before {
+						top: 0;
+						bottom: 0;
+						right: 0;
+						height: 100%;
+						width: 100%;
+					}
+					.btn.hover-filled-slide-right:hover::before {
+						width: 0%;
+					}
 		}
 
 							
@@ -84,62 +97,62 @@
 	justify-content: space-between;
 	margin-top: 6rem;
 
-	.servicio p {
-		text-align: center;
-		/*  padding-top: 1rem; */
-	}
-	.servicio img {
-		width: 40%;
-		height: auto;
-	}
-	
-	.h2-servicios {
-		display: flex;
-		justify-content: space-around;
-		margin: 1rem 1rem;
-	}
+		.servicio p {
+			text-align: center;
+			/*  padding-top: 1rem; */
+		}
+		.servicio img {
+			width: 40%;
+			height: auto;
+		}
+		
+		.h2-servicios {
+			display: flex;
+			justify-content: space-around;
+			margin: 1rem 1rem;
+		}
 
-	.servicio {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 30%;
-		height: auto;
-		padding: 1rem 1rem 0 2rem;
-		margin: 2rem 1rem;
-		text-align: center;
-	}
+		.servicio {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 30%;
+			height: auto;
+			padding: 1rem 1rem 0 2rem;
+			margin: 2rem 1rem;
+			text-align: center;
+		}
 
-	.shadow-left {
-		box-shadow: -2px 2px 6px 1px rgba(0, 0, 0, 0.55);
-	}
+		.shadow-left {
+			box-shadow: -2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+		}
 
-	.card-border {
-		border-radius: 15px;
-	}
+		.card-border {
+			border-radius: 15px;
+		}
 
-	.servicio p {
-		text-align: center;
-		/*  padding-top: 1rem; */
-	}
-	.servicio img {
-		width: 40%;
-		height: auto;
-	}
-	
-	.h2-servicios {
-		display: flex;
-		justify-content: space-around;
-		margin: 1rem 1rem;
-	}
-	
-	#btn-servicios {
-		display: flex;
-		justify-content: space-around;
-		margin-bottom: 1rem;
-		margin-top: 2rem;
-	}
-	
+		.servicio p {
+			text-align: center;
+			/*  padding-top: 1rem; */
+		}
+		.servicio img {
+			width: 40%;
+			height: auto;
+		}
+		
+		.h2-servicios {
+			display: flex;
+			justify-content: space-around;
+			margin: 1rem 1rem;
+		}
+		
+		#btn-servicios {
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 1rem;
+			margin-top: 2rem;
+		}
+		
 
 }
 
@@ -151,113 +164,74 @@
 	margin-bottom: 3rem;
 
 			
-	.btn {
-		position: relative;
-		display: inline-block;
-		width: auto;
-		height: auto;
-		background-color: transparent;
-		border: none;
-		cursor: pointer;
-		margin: 0px 25px 15px;
-		min-width: 170px;
-	}
+		.btn {
+			position: relative;
+			display: inline-block;
+			width: auto;
+			height: auto;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			margin: 0px 25px 15px;
+			min-width: 170px;
+		}
 
-				/*--- btn-1 ---*/
-	.btn-1::before {
-		background-color: rgb(28, 31, 30);
-		transition: 0.3s ease-out;
-		border-radius: 20px;
-	}
-	.btn-1 a {
-		color: rgb(255, 255, 255);
-		border: 1px solid rgb(28, 31, 30);
-		transition: 0.2s 0.1s;
-	}
-	.btn-1 a:hover {
-		color: rgb(28, 31, 30);
-		transition: 0.2s 0.1s;
-	}
-	/* 4. hover-filled-slide-right */
-	.btn.hover-filled-slide-right::before {
-		top: 0;
-		bottom: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-	}
-	.btn.hover-filled-slide-right:hover::before {
-		width: 0%;
-	}
+		.btn a {
+			position: relative;
+			display: inline-block;
+			font-size: 18px;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 15px 20px;
+			transition: 0.3s;
+			text-decoration: none;
+			border-radius: 20px;
+		}
+
+		/*--- btn-1 ---*/
+
+			::before,
+			::after {
+				position: absolute;
+				content: '';
+				}
+
+			:active,
+			:hover,
+			:focus {
+				outline: 0 !important;
+				outline-offset: 0;
+			}
+		.btn-1::before {
+			background-color: rgb(28, 31, 30);
+			transition: 0.3s ease-out;
+			border-radius: 20px;
+		}
+		.btn-1 a {
+			color: rgb(255, 255, 255);
+			border: 1px solid rgb(28, 31, 30);
+			transition: 0.2s 0.1s;
+		}
+		.btn-1 a:hover {
+			color: rgb(28, 31, 30);
+			transition: 0.2s 0.1s;
+		}
+		/* 4. hover-filled-slide-right */
+		.btn.hover-filled-slide-right::before {
+			top: 0;
+			bottom: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+		}
+		.btn.hover-filled-slide-right:hover::before {
+			width: 0%;
+		}
 
 }
 
 
-
-section.section {
-	margin: 4rem 4rem;
-
-
-	.orientacion-title {
-		grid-area: h2;
-	}
-
-	.orientacion-paragraph {
-		grid-area: paragraph;
-	}
-
-	
-	.orientacion-personales {
-		grid-area: personales;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 2rem;
-
-		.card-border {
-			border-radius: 15px;
-		}
-	
-		.shadow-right {
-			box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
-		}
-
-		.orientacion h2,
-		p {
-			text-align: center;
-			margin: 1rem 2rem;
-		}
-	}
-
-
-	.orientacion-pymes {
-		grid-area: pymes;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 2rem;
-
-				
-			.card-border {
-				border-radius: 15px;
-			}
-
-			.shadow-right {
-				box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
-			}
-	}	
-		
-	#btn-servicios {
-		display: flex;
-		justify-content: space-around;
-		margin-bottom: 1rem;
-		margin-top: 2rem;
-	}
-	
-
-}
 
 .orientacion {
 	display: grid;
@@ -270,7 +244,71 @@ section.section {
 	column-gap: 3rem;
 	row-gap: 1rem;
 	margin-bottom: 2rem;
+
+
+
+		.orientacion-title {
+			grid-area: h2;
+			text-align: center;
+		}
+
+		.orientacion-paragraph {
+			grid-area: paragraph;
+		}
+
+		
+		.orientacion-personales {
+			grid-area: personales;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 2rem;
+
+					.card-border {
+						border-radius: 15px;
+					}
+				
+					.shadow-right {
+						box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+					}
+
+					.orientacion h2,
+					p {
+						text-align: center;
+						margin: 1rem 2rem;
+					}
+	}
+
+
+	.orientacion-pymes {
+		grid-area: pymes;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+
+				
+				.card-border {
+					border-radius: 15px;
+				}
+
+				.shadow-right {
+					box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+				}
+	}	
+		
+	#btn-servicios {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+	}
+	
+
 }
+
 
 .navbar-brand {
 	font-size: 2rem;
@@ -300,3 +338,4 @@ a.nav-link {
 	padding-left: 0;
 	padding-right: 0;
 }
+

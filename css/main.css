@@ -117,6 +117,20 @@ a {
   min-width: 170px;
 }
 
+.header-content .mas-servicios .btn a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
 .header-content .mas-servicios .btn-1::before {
   background-color: #1c1f1e;
   -webkit-transition: 0.3s ease-out;
@@ -280,6 +294,33 @@ a {
   min-width: 170px;
 }
 
+.mas-servicios .btn a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.mas-servicios ::before,
+.mas-servicios ::after {
+  position: absolute;
+  content: '';
+}
+
+.mas-servicios :active,
+.mas-servicios :hover,
+.mas-servicios :focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
 .mas-servicios .btn-1::before {
   background-color: #1c1f1e;
   -webkit-transition: 0.3s ease-out;
@@ -312,25 +353,36 @@ a {
   width: 0%;
 }
 
-section.section {
-  margin: 4rem 4rem;
+.orientacion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 'h2         h2' 'paragraph  paragraph' 'personales pymes';
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-section.section .orientacion-title {
+.orientacion .orientacion-title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: h2;
+  text-align: center;
 }
 
-section.section .orientacion-paragraph {
+.orientacion .orientacion-paragraph {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: paragraph;
 }
 
-section.section .orientacion-personales {
+.orientacion .orientacion-personales {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: personales;
@@ -350,22 +402,22 @@ section.section .orientacion-personales {
   margin-bottom: 2rem;
 }
 
-section.section .orientacion-personales .card-border {
+.orientacion .orientacion-personales .card-border {
   border-radius: 15px;
 }
 
-section.section .orientacion-personales .shadow-right {
+.orientacion .orientacion-personales .shadow-right {
   -webkit-box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
           box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
 }
 
-section.section .orientacion-personales .orientacion h2,
-section.section .orientacion-personales p {
+.orientacion .orientacion-personales .orientacion h2,
+.orientacion .orientacion-personales p {
   text-align: center;
   margin: 1rem 2rem;
 }
 
-section.section .orientacion-pymes {
+.orientacion .orientacion-pymes {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: pymes;
@@ -385,16 +437,16 @@ section.section .orientacion-pymes {
   margin-bottom: 2rem;
 }
 
-section.section .orientacion-pymes .card-border {
+.orientacion .orientacion-pymes .card-border {
   border-radius: 15px;
 }
 
-section.section .orientacion-pymes .shadow-right {
+.orientacion .orientacion-pymes .shadow-right {
   -webkit-box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
           box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
 }
 
-section.section #btn-servicios {
+.orientacion #btn-servicios {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,20 +454,6 @@ section.section #btn-servicios {
       justify-content: space-around;
   margin-bottom: 1rem;
   margin-top: 2rem;
-}
-
-.orientacion {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
-      grid-template-areas: 'h2         h2' 'paragraph  paragraph' 'personales pymes';
-  -webkit-column-gap: 3rem;
-          column-gap: 3rem;
-  row-gap: 1rem;
-  margin-bottom: 2rem;
 }
 
 .navbar-brand {
@@ -947,4 +985,32 @@ a.nav-link {
 
 .section .hero-img-capacitacion .para-capacitacion {
   text-align: center;
+}
+
+.container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+  color: var(--text-button);
+  width: 100%;
+  height: 6rem;
+}
+
+.container-footer .social {
+  padding: 1rem;
+}
+
+.container-footer .social i.icon {
+  width: 2rem;
+}
+
+.container-footer .social i.fab-fa-facebook {
+  width: 2rem;
 }

@@ -6,4 +6,18 @@
 	color: var(--text-button);
 	width: 100%;
 	height: 6rem;
+
+	.social {
+		padding: 1rem;
+
+			i.icon {
+				width: 2rem;
+			}
+			
+			i.fab-fa-facebook {
+				width: 2rem;
+			}
+	}
+	
+
 }

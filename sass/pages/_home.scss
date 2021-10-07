@@ -7,7 +7,8 @@
 	/*  padding: 5rem 3rem; */
 	overflow: hidden;
 
-		.header-item {
+	article{
+		&.header-item {
 			display: flex;
 			width: 100%;
 			flex-direction: column;
@@ -17,6 +18,7 @@
 			padding: 0, 3rem;
 			margin-bottom: 1rem;
 		}
+	}
 
 			.mas-servicios {
 				display: flex;
@@ -25,7 +27,9 @@
 				margin-top: 3rem;
 				margin-bottom: 3rem;
 
-					.btn {
+				button{
+
+					&.btn {
 						position: relative;
 						display: inline-block;
 						width: auto;
@@ -37,7 +41,7 @@
 						min-width: 170px;
 					}
 
-					.btn a {
+					&.btn a {
 						position: relative;
 						display: inline-block;
 						font-size: 18px;
@@ -49,6 +53,7 @@
 						text-decoration: none;
 						border-radius: 20px;
 					}
+				}
 
 					/*--- btn-1 ---*/
 					.btn-1::before {
@@ -97,22 +102,9 @@
 	justify-content: space-between;
 	margin-top: 6rem;
 
-		.servicio p {
-			text-align: center;
-			/*  padding-top: 1rem; */
-		}
-		.servicio img {
-			width: 40%;
-			height: auto;
-		}
-		
-		.h2-servicios {
-			display: flex;
-			justify-content: space-around;
-			margin: 1rem 1rem;
-		}
-
-		.servicio {
+	
+	article{
+		&.servicio {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -123,28 +115,30 @@
 			text-align: center;
 		}
 
-		.shadow-left {
+		&.shadow-left {
 			box-shadow: -2px 2px 6px 1px rgba(0, 0, 0, 0.55);
 		}
 
-		.card-border {
+		
+		&.card-border {
 			border-radius: 15px;
 		}
 
-		.servicio p {
+		&.servicio p {
 			text-align: center;
 			/*  padding-top: 1rem; */
 		}
-		.servicio img {
+		&.servicio img {
 			width: 40%;
 			height: auto;
 		}
 		
-		.h2-servicios {
+		&.h2-servicios {
 			display: flex;
 			justify-content: space-around;
 			margin: 1rem 1rem;
 		}
+	}
 		
 		#btn-servicios {
 			display: flex;

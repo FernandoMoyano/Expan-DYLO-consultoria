@@ -1,0 +1,280 @@
+.header-content {
+  display: flex;
+  width: 90%;
+  height: 100vh;
+  justify-content: space-around;
+  margin: auto;
+  /*  padding: 5rem 3rem; */
+  overflow: hidden;
+}
+.header-content article.header-item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0, 3rem;
+  margin-bottom: 1rem;
+}
+.header-content .mas-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  /*--- btn-1 ---*/
+  /* 4. hover-filled-slide-right */
+}
+.header-content .mas-servicios button.btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px 25px 15px;
+  min-width: 170px;
+}
+.header-content .mas-servicios button.btn a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.header-content .mas-servicios .btn-1::before {
+  background-color: #1c1f1e;
+  transition: 0.3s ease-out;
+  border-radius: 20px;
+}
+.header-content .mas-servicios .btn-1 a {
+  color: white;
+  border: 1px solid #1c1f1e;
+  transition: 0.2s 0.1s;
+}
+.header-content .mas-servicios .btn-1 a:hover {
+  color: #1c1f1e;
+  transition: 0.2s 0.1s;
+}
+.header-content .mas-servicios .btn.hover-filled-slide-right::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.header-content .mas-servicios .btn.hover-filled-slide-right:hover::before {
+  width: 0%;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.servicios-principales {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+.servicios-principales article.servicio {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  padding: 1rem 1rem 0 2rem;
+  margin: 2rem 1rem;
+  text-align: center;
+}
+.servicios-principales article.shadow-left {
+  box-shadow: -2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+}
+.servicios-principales article.card-border {
+  border-radius: 15px;
+}
+.servicios-principales article.servicio p {
+  text-align: center;
+  /*  padding-top: 1rem; */
+}
+.servicios-principales article.servicio img {
+  width: 40%;
+  height: auto;
+}
+.servicios-principales article.h2-servicios {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 1rem;
+}
+.servicios-principales #btn-servicios {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.mas-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  /*--- btn-1 ---*/
+  /* 4. hover-filled-slide-right */
+}
+.mas-servicios .btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px 25px 15px;
+  min-width: 170px;
+}
+.mas-servicios .btn a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.mas-servicios ::before,
+.mas-servicios ::after {
+  position: absolute;
+  content: "";
+}
+.mas-servicios :active,
+.mas-servicios :hover,
+.mas-servicios :focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+.mas-servicios .btn-1::before {
+  background-color: #1c1f1e;
+  transition: 0.3s ease-out;
+  border-radius: 20px;
+}
+.mas-servicios .btn-1 a {
+  color: white;
+  border: 1px solid #1c1f1e;
+  transition: 0.2s 0.1s;
+}
+.mas-servicios .btn-1 a:hover {
+  color: #1c1f1e;
+  transition: 0.2s 0.1s;
+}
+.mas-servicios .btn.hover-filled-slide-right::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.mas-servicios .btn.hover-filled-slide-right:hover::before {
+  width: 0%;
+}
+
+.orientacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "h2         h2" "paragraph  paragraph" "personales pymes";
+  column-gap: 3rem;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.orientacion .orientacion-title {
+  grid-area: h2;
+  text-align: center;
+}
+.orientacion .orientacion-paragraph {
+  grid-area: paragraph;
+}
+.orientacion .orientacion-personales {
+  grid-area: personales;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.orientacion .orientacion-personales .card-border {
+  border-radius: 15px;
+}
+.orientacion .orientacion-personales .shadow-right {
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+}
+.orientacion .orientacion-personales .orientacion h2,
+.orientacion .orientacion-personales p {
+  text-align: center;
+  margin: 1rem 2rem;
+}
+.orientacion .orientacion-pymes {
+  grid-area: pymes;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.orientacion .orientacion-pymes .card-border {
+  border-radius: 15px;
+}
+.orientacion .orientacion-pymes .shadow-right {
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+}
+.orientacion #btn-servicios {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  padding: none;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+a.nav-link {
+  font-size: 21px;
+  padding: 16px;
+  margin-right: 3rem;
+}
+
+.row {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col {
+  margin: 2rem;
+}
+
+.row > * {
+  margin: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}

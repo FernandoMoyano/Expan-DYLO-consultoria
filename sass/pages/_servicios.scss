@@ -4,243 +4,378 @@
 	height: 100vh;
 	justify-content: space-around;
 	margin: auto;
-	/*  padding: 5rem 3rem; */
 	overflow: hidden;
 
-    .header-item {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0, 3rem;
-        margin-bottom: 1rem;
-    }
-}
-
-.btn {
-	position: relative;
-	display: inline-block;
-	width: auto;
-	height: auto;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	margin: 0px 25px 15px;
-	min-width: 170px;
-}
-
-/*--- btn-1 ---*/
-.btn-1::before {
-	background-color: rgb(28, 31, 30);
-	transition: 0.3s ease-out;
-	border-radius: 20px;
-}
-.btn-1 a {
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(28, 31, 30);
-	transition: 0.2s 0.1s;
-}
-.btn-1 a:hover {
-	color: rgb(28, 31, 30);
-	transition: 0.2s 0.1s;
-}
-/* 4. hover-filled-slide-right */
-.btn.hover-filled-slide-right::before {
-	top: 0;
-	bottom: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-}
-.btn.hover-filled-slide-right:hover::before {
-	width: 0%;
-}
-
-/*Efecto*/
-.modalmask {
-	position: fixed;
-	font-family: Arial, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.8);
-	z-index: 99999;
-	opacity: 0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-
-            /*Formato de la ventana*/
-    .modalbox {
-        width: 800px;
-        position: relative;
-        padding: 5px 20px 13px 20px;
-        background: #fff;
-        border-radius: 3px;
-        -webkit-transition: all 500ms ease-in;
-        -moz-transition: all 500ms ease-in;
-        transition: all 500ms ease-in;
-    }
-    
-    /*Movimientos*/
-    .movedown {
-        margin: 0 auto;
-        .close {
-            background: #606061;
-            color: #ffffff;
-            line-height: 25px;
-            position: absolute;
-            right: 1px;
-            text-align: center;
-            top: 1px;
-            width: 24px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 3px;
-        }
-
-        .close:hover {
-            background: #faac58;
-            color: #222;
-        }
-
-        .rotate {
-            margin: 10% auto;
-            -webkit-transform: scale(-5, -5);
-            transform: scale(-5, -5);
-        }
-
-        .resize {
-            margin: 10% auto;
-            width: 0;
-            height: 0;
-        }
-
-        .modalmask:target .movedown {
-            margin: 10% auto;
-        }
-        .modalmask:target .rotate {
-            transform: rotate(360deg) scale(1, 1);
-            -webkit-transform: rotate(360deg) scale(1, 1);
-        }
-        
-        .modalmask:target .resize {
-            width: 400px;
-            height: 200px;
-        }
-    }
-}
-
-.modalmask:target {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-.section {
-	margin: 4rem 4rem;
-
-    .title-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 3rem;
-    }
-}
-
-
-.container-testimonios {
-	display: flex;
-	width: 90%;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin: auto;
-	align-items: center;
-	margin-bottom: 4rem;
-
-            
-    .item-testimonio {
-        background-color: var(--text-button);
-        border: thin solid var(--background-ligth);
-        object-fit: cover;
-        border-radius: 20px;
-        width: 40%;
-        margin: 2rem auto;
-        margin-bottom: 2rem;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    
-    .shadow-center {
-        box-shadow: -2px 12px 38px -2px rgba(0, 0, 0, 0.7);
-
-      
-        .img-testimonio {
-            background-color: var(--text-second);
-            width: 100%;
-            height: auto;
-            border: none;
-            border-radius: 20px;
-        }
-
-        .paragraph-testimonio {
-            margin: auto;
-            width: 50%;
-            border-radius: 20px;
-            text-align: center;
-            color: var(--color-text);
-        }
-        
-
-    }
-}
-
-.para-capacitacion{
-	text-align: center;
-}
-
-.section {
-	margin: 4rem 4rem;
-
-    .title-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 3rem;
-    }
-
-    .capacitacion {
-        margin: 0;
-        padding: 0;
-    }
-
-    .hero-img-capacitacion {
-        background-image: url(../assets/capacitación.jpg);
-        width: 100%;
-        min-height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-
-        .hero-img-content {
-            min-height: inherit;
+        article{
+        &.header-item {
             display: flex;
+            width: 100%;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            opacity: 0.7;
-            background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+            padding: 0, 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+        article{
+            &.header-item{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0, 3rem;
+            margin-bottom: 1rem;
+            }
         }
 
-        .para-capacitacion{
-            text-align: center;
+        .header-item h1 {
+            margin-bottom: 1rem;
+        }
+        
+        .header-item p {
+            margin-bottom: 2rem;
+  
         }
 
     }
+
+
+
+section{
+            &.section{
+                margin: 4rem 4rem;
+            
+            }
+
+            .title-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 3rem;
+            }
+
+            .servicios-principales {
+                display: flex;
+                flex-wrap: wrap;
+                width: 95%;
+                margin: auto;
+                justify-content: space-between;
+                margin-top: 6rem;
+
+                
+            .servicio {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                height: auto;
+                padding: 1rem 1rem 0 2rem;
+                margin: 2rem 1rem;
+                text-align: center;
+
+                button{
+
+                    &.btn {
+                        position: relative;
+                        display: inline-block;
+                        width: auto;
+                        height: auto;
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        margin: 0px 25px 15px;
+                        min-width: 170px;
+                    }
+
+                    &.btn a {
+						position: relative;
+						display: inline-block;
+						font-size: 18px;
+						top: 0;
+						left: 0;
+						width: 100%;
+						padding: 15px 20px;
+						transition: 0.3s;
+						text-decoration: none;
+						border-radius: 20px;
+					}
+                    
+                }
+
+                    ::before,
+                    ::after {
+                    position: absolute;
+                    content: '';
+                }
+
+                    :active,
+                    :hover,
+                    :focus {
+                        outline: 0 !important;
+                        outline-offset: 0;
+                }
+
+                 /*--- btn-1 ---*/
+                 .btn-1::before {
+                    background-color: rgb(28, 31, 30);
+                    transition: 0.3s ease-out;
+                    border-radius: 20px;
+                }
+                
+                .btn-1 a {
+                    color: rgb(255, 255, 255);
+                    border: 1px solid rgb(28, 31, 30);
+                    transition: 0.2s 0.1s;
+                }
+                .btn-1 a:hover {
+                    color: rgb(28, 31, 30);
+                    transition: 0.2s 0.1s;
+                }
+                /* 4. hover-filled-slide-right */
+                .btn.hover-filled-slide-right::before {
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+                .btn.hover-filled-slide-right:hover::before {
+                    width: 0%;
+                }
+                
+                   
+                .modalmask {
+                    position: fixed;
+                    font-family: Arial, sans-serif;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.8);
+                    z-index: 99999;
+                    opacity: 0;
+                    -webkit-transition: opacity 400ms ease-in;
+                    -moz-transition: opacity 400ms ease-in;
+                    transition: opacity 400ms ease-in;
+                    pointer-events: none;
+                }
+                    .modalmask:target {
+                        opacity: 1;
+                        pointer-events: auto;
+                        
+            
+                    /*Formato de la ventana*/
+                    .modalbox {
+                        width: 800px;
+                        position: relative;
+                        padding: 5px 20px 13px 20px;
+                        background: #fff;
+                        border-radius: 3px;
+                        -webkit-transition: all 500ms ease-in;
+                        -moz-transition: all 500ms ease-in;
+                        transition: all 500ms ease-in;
+                    }
+
+                    .rotate {
+                        margin: 10% auto;
+                        -webkit-transform: scale(-5, -5);
+                        transform: scale(-5, -5);
+                    }
+        
+                    .resize {
+                        margin: 10% auto;
+                        width: 0;
+                        height: 0;
+                    }
+        
+                    .modalmask:target .movedown {
+                        margin: 10% auto;
+                    }
+                    .modalmask:target .rotate {
+                        transform: rotate(360deg) scale(1, 1);
+                        -webkit-transform: rotate(360deg) scale(1, 1);
+                    }
+                    
+                    .modalmask:target .resize {
+                        width: 400px;
+                        height: 200px;
+                    }
+                    /*movimiento*/
+                    .movedown {
+                        margin: 0 auto;
+                        
+                        .close {
+                            background: #606061;
+                            color: #ffffff;
+                            line-height: 25px;
+                            position: absolute;
+                            right: 1px;
+                            text-align: center;
+                            top: 1px;
+                            width: 24px;
+                            text-decoration: none;
+                            font-weight: bold;
+                            border-radius: 3px;
+                        }
+            
+                        .close:hover {
+                            background: #faac58;
+                            color: #222;
+                        }
+            
+                    }
+                
+                } 
+                
+               
+        }
+
+                
+    }
 }
+                    
+
+
+/* --------------------------- servicios paralelos -------------------------- */
+section{
+
+            &.section {
+                    margin: 4rem 4rem;
+            }
+            .title-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 3rem;
+            }
+
+            
+
+    article{
+
+        &.container-testimonios {
+            display: flex;
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            align-items: center;
+            margin-bottom: 4rem;
+
+                
+        .item-testimonio {
+            background-color: var(--text-button);
+            border: thin solid var(--background-ligth);
+            object-fit: cover;
+            border-radius: 20px;
+            width: 40%;
+            margin: 2rem auto;
+            margin-bottom: 2rem;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .item-testimonio h2 {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        .shadow-center {
+             box-shadow: -2px 12px 38px -2px rgba(0, 0, 0, 0.7);
+            
+
+                    .img-testimonio {
+                        background-color: var(--text-second);
+                        width: 100%;
+                        height: auto;
+                        border: none;
+                        border-radius: 20px;
+                    } 
+
+                  
+                    .paragraph-testimonio {
+                        margin: auto;
+                        width: 50%;
+                        border-radius: 20px;
+                        text-align: center;
+                        color: var(--color-text);
+                    }
+                        
+                }
+                
+            
+        }
+    }
+
+}
+
+/* ------------------------------ capacitacion ------------------------------ */
+section{
+
+    &.capacitacion{
+        text-align: center;
+
+        .title-section-capacitacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .hero-img-capacitacion {
+            background-image: url(../assets/capacitación.jpg);
+            width: 100%;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+
+            .hero-img-content {
+                min-height: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                opacity: 0.7;
+                background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+
+                h1{
+                    color: white;
+                    margin-bottom: 2rem;
+                }
+            }
+
+
+            .para-capacitacion{
+                text-align: center;
+                color: white;
+            }
+
+          
+        }
+    
+    }
+
+       
+    
+}
+
+
+
+
+
+   
+
+   
+        
+
+       
+
+

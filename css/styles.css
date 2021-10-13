@@ -327,20 +327,6 @@ a.nav-link {
 }
 /* ------------------------------- nuestros clientes dicen ------------------------------ */
 
-/* .container-testimonios {
-	display: grid;
-	width: 90%;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, auto);
-	column-gap: 1rem;
-	row-gap: 3rem;
-	margin: auto;
-	justify-items: center;
-	align-items: center;
-	margin-bottom: 4rem;
-} */
-
-
 .container-testimonios {
 	display: flex;
 	width: 90%;

@@ -828,7 +828,7 @@ p {
 	background-attachment: fixed;
 }
 
-#img-contact {
+.img-contact {
 	display: flex;
 	justify-content: center;
 	width: 100%;

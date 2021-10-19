@@ -706,7 +706,7 @@ p {
 
 /* ------------------------------------- carousel --------------------------------- */
 
-.hero-image {
+/* .hero-image {
 	background-image: var(--hero-image);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -737,10 +737,10 @@ p {
 .section-title {
 	color: var(--text-button);
 }
-
+ */
 /* ------------------------------------ carousel(animación) ----------------------------------- */
 
-@keyframes carousel-slide {
+/* @keyframes carousel-slide {
 	0% {
 		transform: translateX(0%);
 	}
@@ -812,7 +812,7 @@ p {
 #slide-3:checked ~ .slides-nav label#dot-3,
 #slide-4:checked ~ .slides-nav label#dot-4 {
 	background-color: var(--gray-dark-color);
-}
+} */
 
 /* -------------------------------------------------------------------------- */
 /*                                  CONTACTO                                  */

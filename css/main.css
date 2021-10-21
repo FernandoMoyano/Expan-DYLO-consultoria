@@ -1198,3 +1198,284 @@ section form #clear {
 .container-footer .social i.fab-fa-facebook {
   width: 2rem;
 }
+
+@media screen and (max-width: 1600px) {
+  div.header-content {
+    display: flex;
+    width: 90%;
+  }
+  div.header-content article.header-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0, 3rem;
+    margin-bottom: 1rem;
+  }
+  div.header-content article.header-item div.mas-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  div.sevicios-principales {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  div.sevicios-principales article.servicio {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    margin-top: 5rem;
+  }
+  div.sevicios-principales article.servicio img {
+    width: 15%;
+    min-height: 200px;
+    margin: auto;
+  }
+  div.sevicios-principales article.servicio p {
+    text-align: center;
+  }
+  div #btn-servicios {
+    margin: 1rem 1rem 2rem;
+  }
+  section.section {
+    margin: 4rem 4rem;
+  }
+  section.orientacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 'h2         h2' 'paragraph  paragraph' 'personales pymes';
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  section div.orientacion-title {
+    grid-area: h2;
+  }
+  section div.orientacion-paragraph {
+    grid-area: paragraph;
+  }
+  section article.orientacion-personales {
+    grid-area: personales;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  section article.orientacion-pymes {
+    grid-area: pymes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  section h2, section p {
+    text-align: center;
+    margin: 1rem 2rem;
+  }
+  section img {
+    width: 80%;
+    height: auto;
+  }
+  .container-testimonios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .container-testimonios .item-testimonio {
+    width: 80%;
+  }
+  .container-testimonios .img-testimonio {
+    width: 100%;
+  }
+  .container-testimonios .paragraph-testimonio {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  div.header-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  div.header-content article.header-item {
+    width: 60%;
+  }
+  div.header-content article.header-item img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  div.header-contetnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  div.header-contetnt article.header-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+  div.header-contetnt article.header-item h1 {
+    font-size: 3rem;
+  }
+  div.header-contetnt article.header-item h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  div.header-content {
+    display: flex;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  div.header-content article.header-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+  div.header-content article.header-item img {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+  }
+  div.header-content article.header-item p {
+    margin-bottom: 1rem;
+  }
+  .servicio img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .section {
+    margin: 0%;
+  }
+  div.header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  div.header-content article.header-item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: auto;
+    max-width: 100%;
+  }
+  div.header-content article.header-item img {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+  }
+  div.servicios-principales {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 6rem;
+  }
+  div.servicios-principales article.servicio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0%;
+    padding: 1rem;
+  }
+  div.servicios-principales article.servicio p {
+    margin: 0rem;
+  }
+  section.orientacion {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 'h2' 'paragraph' 'personales' 'pymes';
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .row {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  article.container-testimonios {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  article.container-testimonios div.item-testimonio {
+    width: 90%;
+    background-color: var(--text-button);
+    border: thin solid var(--background-ligth);
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 2rem auto;
+    margin-bottom: 2rem;
+    height: 100%;
+    object-fit: cover;
+  }
+  article.container-testimonios div.item-testimonio img.img-testimonio {
+    width: 100%;
+  }
+  article.container-testimonios div.item-testimonio p.paragraph-testimonio {
+    width: 100%;
+  }
+  section.section {
+    margin: 0rem;
+  }
+  section.sobre-nosotros {
+    display: grid;
+    grid-template-areas: 'grupo-especial' 'para' 'item1' 'description1' 'item2' 'description2' 'item3' 'description3';
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, auto);
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+  section.sobre-nosotros img {
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+  }
+}

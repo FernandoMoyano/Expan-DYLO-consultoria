@@ -949,7 +949,7 @@ p {
 /* -------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1600px) {
-	.elements-nav {
+/* 	.elements-nav {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -960,7 +960,7 @@ p {
 	.logo {
 		text-align: center;
 	}
-
+ */
 	.header-content {
 		display: flex;
 		width: 90%;

@@ -553,6 +553,18 @@
 		font-size: 1.5rem;
 	}
 
+	::-webkit-scrollbar {
+		width: 9px;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: var(--color-button);
+		border-radius: 50px;
+	}
+	::-webkit-scrollbar-track {
+		background-color: var(--text-button);
+		border-radius: 80px;
+	}
+
 	.section{
 		margin: 1rem;
 		

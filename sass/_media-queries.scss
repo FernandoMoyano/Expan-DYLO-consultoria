@@ -554,7 +554,8 @@
 	}
 
 	.section{
-		margin: 0%;
+		margin: 1rem;
+		
 	}
 	div{
 		&.header-content{
@@ -574,6 +575,10 @@
 					flex-wrap: nowrap;
 					margin: auto;
 					max-width: 100%;
+
+					h1{
+						font-size: 2rem;
+					}
 					
 					img{
 						margin: auto;
@@ -586,31 +591,38 @@
 		}
 	}
 
-	div{
-		&.servicios-principales{
-			display: flex;
-			flex-wrap: wrap;
-			width: 90%;
-			margin: auto;
-			justify-content: center;
-			margin-top: 6rem;
-			
-			article{
-				&.servicio{
-					width: 100%;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					margin-top: 0%;
-					padding: 1rem;
 
-					p{
-						margin: 0rem;	
+	section{
+		div{
+			&.servicios-principales{
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				margin: auto;
+				justify-content: center;
+				margin-top: 6rem;
+				
+				article{
+					&.servicio{
+						width: 100%;
+						max-width: 100%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						margin-top: 0%;
+						padding: 1rem;
+
+						p{
+							margin: 0rem;	
+						}
+
 					}
 				}
 			}
 		}
 	}
+
+
 
 	section{
 		&.orientacion{
@@ -634,33 +646,44 @@
 		padding-right: 0;
 	}
 
+	section{
+
+		&.section{
+			margin: 2rem;
+			padding: 1rem;
+		}
+
 	article{
 		&.container-testimonios{
 			display: flex;
 			flex-direction: column;
-			margin: auto;
+			width: 100%;
+		
 
-			div{
-					&.item-testimonio{
-						width: 90%;
-						background-color: var(--text-button);
-						border: thin solid var(--background-ligth);
-						object-fit: cover;
-						border-radius: 20px;
-						margin: 2rem auto;
-						margin-bottom: 2rem;
-						height: 100%;
-						object-fit: cover;
-
-					img{
-						&.img-testimonio{
+				div{
+						&.item-testimonio{
 							width: 100%;
+							background-color: var(--text-button);
+							border: thin solid var(--background-ligth);
+							object-fit: cover;
+							border-radius: 20px;
+							margin: 2rem auto;
+							margin-bottom: 2rem;
+							height: 100%;
+							object-fit: cover;
+						
+
+						img{
+							&.img-testimonio{
+								width: 100%;
+								height: auto;
+							}
 						}
-					}
 
-					p{
-						&.paragraph-testimonio{
-							width: 100%;
+						p{
+							&.paragraph-testimonio{
+								width: 100%;
+							}
 						}
 					}
 				}
@@ -696,25 +719,29 @@
 		}
 	}
 
-	article{
-		&.container-multidisiplinario{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
 
-			div{
-				&.item-multidisiplinario{
-					width: 90%;
-					height: 100%;
-					object-fit: cover;
-					border: thin solid var(--background-ligth);
-					border-radius: 20px;
-					margin-bottom: 2rem;
+
+		article{
+			&.container-multidisiplinario{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				div{
+					&.item-multidisiplinario{
+						width: 90%;
+						height: 100%;
+						object-fit: cover;
+						border: thin solid var(--background-ligth);
+						border-radius: 20px;
+						margin-bottom: 2rem;
+					}
 				}
 			}
 		}
-	}
+
+
 
 	section{
 		&.section{

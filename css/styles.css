@@ -68,7 +68,7 @@ button a:hover{
 }
 
 
-/* ------------------------------------ 8 ----------------------------------- */
+/* ------------------------------------ CARD-HOVER ----------------------------------- */
 /* 
 .main-title{
   color: #2d2d2d;
@@ -77,25 +77,25 @@ button a:hover{
   padding: 0.7em 0;
 } */
 
-.container{
+/* .container-paralelos{
   padding: 1em 0;
   float: left;
   width: 50%;
 }
 @media screen and (max-width: 640px){
-  .container{
+  .container-paralelos{
     display: block;
     width: 100%;
   }
 }
 
 @media screen and (min-width: 900px){
-  .container{
+  .container-paralelos{
     width: 50%;
   }
 }
 
-.container .title{
+.container-paralelos .title{
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 10px;
@@ -128,7 +128,7 @@ button a:hover{
   opacity: 1;
 }
 
-.content-image{
+.content-image-paralelos{
   width: 100%;
 }
 
@@ -182,7 +182,7 @@ button a:hover{
 
 .fadeIn-right{
   left: 80%;
-}
+} */
 
 /* ------------------------------------ 8 ----------------------------------- */
 

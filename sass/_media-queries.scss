@@ -317,15 +317,75 @@
 					justify-content: space-around;
 					align-items: center;
 					flex-wrap: nowrap;
-					margin: 1rem auto;
+					margin: 0 auto;
 					max-width: 100%;
 
 					h1{
-						font-size: 3rem;	
+						font-size: 3rem;
+						margin-bottom: 2rem;	
+					}
+					p{
+						font-size: 1.2rem;
 					}
 
 					h2{
-						font-size: 1.5rem;
+						font-size: 1.2rem;
+					}
+
+					img{
+						margin: auto;
+						width: 400px;
+						height: 400px;
+						max-width: 100%;	
+					}
+
+					div{
+						&.mas-servicios{
+							display: flex;
+							justify-content: start;
+							align-items: center;
+							margin-top: 2rem;
+							margin-bottom: 0rem;
+
+							button{
+								&.btn{
+									position: relative;
+									display: inline-block;
+									width: auto;
+									height: auto;
+									background-color: transparent;
+									border: none;
+									cursor: pointer;
+									margin: 0px 25px 15px;
+									min-width: 170px;
+								}
+									.btn-1::before {
+										background-color: rgb(28, 31, 30);
+										transition: 0.3s ease-out;
+										border-radius: 20px;
+									}
+									.btn-1 a {
+										color: rgb(255, 255, 255);
+										border: 1px solid rgb(28, 31, 30);
+										transition: 0.2s 0.1s;
+									}
+									.btn-1 a:hover {
+										color: rgb(28, 31, 30);
+										transition: 0.2s 0.1s;
+									}
+									/* 4. hover-filled-slide-right */
+									.btn.hover-filled-slide-right::before {
+										top: 0;
+										bottom: 0;
+										right: 0;
+										height: 100%;
+										width: 100%;
+									}
+									.btn.hover-filled-slide-right:hover::before {
+										width: 0%;
+									}			
+							}
+						}
 					}
 				}
 			}
@@ -352,6 +412,7 @@
 
 					p{
 						margin: 0rem;	
+						font-size: 1.2rem;
 					}
 				}
 			}
@@ -371,6 +432,9 @@
 		column-gap: 3rem;
 		row-gap: 1rem;
 		margin-bottom: 2rem;
+		}
+		p{
+			font-size: 1.2rem;
 		}
 	}
 
@@ -545,25 +609,8 @@
 /* ------------------------------------ 8 ----------------------------------- */
 @media screen and (max-width: 575.98px){
 /* ------------------------------------ 8 ----------------------------------- */
-	h1 {
-		font-size: 2rem;
-	}
+	
 
-	h2 {
-		font-size: 1.5rem;
-	}
-
-	body::-webkit-scrollbar {
-		width: 9px;
-	}
-	body::-webkit-scrollbar-thumb {
-		background-color: var(--color-button);
-		border-radius: 50px;
-	}
-	body::-webkit-scrollbar-track {
-		background-color: var(--text-button);
-		border-radius: 80px;
-	}
 
 	.section{
 		margin: 1rem;
@@ -589,14 +636,68 @@
 					max-width: 100%;
 
 					h1{
-						font-size: 2rem;
+						font-size: 1.5rem;
+					}
+					p{
+						font-size: 1.0rem;
 					}
 					
 					img{
 						margin: auto;
-						width: 300px;
-						height: 300px;
+						width: 200px;
+						height: 200px;
 						max-width: 100%;	
+					}
+
+					div{
+						&.mas-servicios{
+							display: flex;
+							justify-content: start;
+							align-items: center;
+							margin-top: 0rem;
+							margin-bottom: 0rem;
+
+							button{
+								&.btn{
+									position: relative;
+									display: inline-block;
+									width: auto;
+									height: auto;
+									background-color: transparent;
+									border: none;
+									cursor: pointer;
+									margin: 0px 25px 15px;
+									min-width: 170px;
+								}
+									.btn-1::before {
+										background-color: rgb(28, 31, 30);
+										transition: 0.3s ease-out;
+										border-radius: 20px;
+									}
+									.btn-1 a {
+										color: rgb(255, 255, 255);
+										border: 1px solid rgb(28, 31, 30);
+										transition: 0.2s 0.1s;
+									}
+									.btn-1 a:hover {
+										color: rgb(28, 31, 30);
+										transition: 0.2s 0.1s;
+									}
+									/* 4. hover-filled-slide-right */
+									.btn.hover-filled-slide-right::before {
+										top: 0;
+										bottom: 0;
+										right: 0;
+										height: 100%;
+										width: 100%;
+									}
+									.btn.hover-filled-slide-right:hover::before {
+										width: 0%;
+									}
+									
+								
+							}
+						}
 					}
 				}
 			}
@@ -626,7 +727,10 @@
 
 						p{
 							margin: 0rem;	
+							font-size: 1rem;
 						}
+
+					
 
 					}
 				}
@@ -649,6 +753,20 @@
 		column-gap: 3rem;
 		row-gap: 1rem;
 		margin-bottom: 2rem;
+
+		p{
+			font-size: 1rem;
+		}
+		}
+	}
+
+	section{
+		&.clientes{
+			p{
+				&.card-text{
+					font-size: 1rem;
+				}
+			}
 		}
 	}
 
@@ -728,9 +846,26 @@
 				height: auto;
 				margin: 2rem auto;
 			}
+			p{
+				font-size: 1rem;
+			}
 		}
 	}
 
+/* -------------------------------- Nosotros -------------------------------- */
+	div{
+		&.hero-img-equipo{
+			div{
+				&.hero-img-content{
+					h2{
+						font-size: 2rem;
+						color: white;
+						margin-bottom: 1rem;
+					}
+				}
+			}
+		}
+	}
 
 
 		article{
@@ -748,6 +883,10 @@
 						border: thin solid var(--background-ligth);
 						border-radius: 20px;
 						margin-bottom: 2rem;
+
+						p{
+							font-size: 1rem;
+						}
 					}
 				}
 			}
@@ -773,8 +912,21 @@
 					}
 					p{
 					width: 100%;
+					font-size: 1rem;
 					}
 					
+				}
+			}
+
+			article{
+				&.container-testimonios{
+					div{
+						&.item-testimonio{						
+							p{
+								font-size: 1rem;
+							}
+						}
+					}
 				}
 			}
 
@@ -801,8 +953,26 @@
 		width: 100%;
 	}
 
-	
+	/* -------------------------------- contacto -------------------------------- */
+	div{
+		&.hero-img-contact{
+			div{
+				&.hero-img-content{
+					h2{
+						font-size: 2rem;
+						color: white;
+						margin-bottom: 1rem;
+					}
+				}
+			}
+		}
+	}
 	section{
+		&.contact{
+			h2{
+				font-size: 2rem;
+			}
+		}
 		
 		form{
 			&.container-contact{

@@ -1525,14 +1525,69 @@ section form #clear {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    margin: 1rem auto;
+    margin: 0 auto;
     max-width: 100%;
   }
   div.header-content article.header-item h1 {
     font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  div.header-content article.header-item p {
+    font-size: 1.2rem;
   }
   div.header-content article.header-item h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  div.header-content article.header-item img {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+  }
+  div.header-content article.header-item div.mas-servicios {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+  div.header-content article.header-item div.mas-servicios button {
+    /* 4. hover-filled-slide-right */
+  }
+  div.header-content article.header-item div.mas-servicios button.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0px 25px 15px;
+    min-width: 170px;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn-1::before {
+    background-color: #1c1f1e;
+    transition: 0.3s ease-out;
+    border-radius: 20px;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn-1 a {
+    color: white;
+    border: 1px solid #1c1f1e;
+    transition: 0.2s 0.1s;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn-1 a:hover {
+    color: #1c1f1e;
+    transition: 0.2s 0.1s;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn.hover-filled-slide-right::before {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn.hover-filled-slide-right:hover::before {
+    width: 0%;
   }
   div.servicios-principales {
     display: flex;
@@ -1552,6 +1607,7 @@ section form #clear {
   }
   div.servicios-principales article.servicio p {
     margin: 0rem;
+    font-size: 1.2rem;
   }
   section.orientacion {
     display: grid;
@@ -1561,6 +1617,9 @@ section form #clear {
     column-gap: 3rem;
     row-gap: 1rem;
     margin-bottom: 2rem;
+  }
+  section p {
+    font-size: 1.2rem;
   }
   article.container-testimonios {
     display: flex;
@@ -1680,23 +1739,6 @@ section form #clear {
 /* ------------------------------------ 8 ----------------------------------- */
 @media screen and (max-width: 575.98px) {
   /* ------------------------------------ 8 ----------------------------------- */
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  body::-webkit-scrollbar {
-    width: 9px;
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--color-button);
-    border-radius: 50px;
-  }
-  body::-webkit-scrollbar-track {
-    background-color: var(--text-button);
-    border-radius: 80px;
-  }
   .section {
     margin: 1rem;
   }
@@ -1718,13 +1760,61 @@ section form #clear {
     max-width: 100%;
   }
   div.header-content article.header-item h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  div.header-content article.header-item p {
+    font-size: 1.0rem;
   }
   div.header-content article.header-item img {
     margin: auto;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     max-width: 100%;
+  }
+  div.header-content article.header-item div.mas-servicios {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  div.header-content article.header-item div.mas-servicios button {
+    /* 4. hover-filled-slide-right */
+  }
+  div.header-content article.header-item div.mas-servicios button.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0px 25px 15px;
+    min-width: 170px;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn-1::before {
+    background-color: #1c1f1e;
+    transition: 0.3s ease-out;
+    border-radius: 20px;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn-1 a {
+    color: white;
+    border: 1px solid #1c1f1e;
+    transition: 0.2s 0.1s;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn-1 a:hover {
+    color: #1c1f1e;
+    transition: 0.2s 0.1s;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn.hover-filled-slide-right::before {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  div.header-content article.header-item div.mas-servicios button .btn.hover-filled-slide-right:hover::before {
+    width: 0%;
   }
   section div.servicios-principales {
     display: flex;
@@ -1745,6 +1835,7 @@ section form #clear {
   }
   section div.servicios-principales article.servicio p {
     margin: 0rem;
+    font-size: 1rem;
   }
   section.orientacion {
     display: grid;
@@ -1754,6 +1845,12 @@ section form #clear {
     column-gap: 3rem;
     row-gap: 1rem;
     margin-bottom: 2rem;
+  }
+  section.orientacion p {
+    font-size: 1rem;
+  }
+  section.clientes p.card-text {
+    font-size: 1rem;
   }
   .row {
     margin: 0;
@@ -1803,6 +1900,15 @@ section form #clear {
     height: auto;
     margin: 2rem auto;
   }
+  section.sobre-nosotros p {
+    font-size: 1rem;
+  }
+  /* -------------------------------- Nosotros -------------------------------- */
+  div.hero-img-equipo div.hero-img-content h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
   article.container-multidisiplinario {
     display: flex;
     flex-direction: column;
@@ -1816,6 +1922,9 @@ section form #clear {
     border: thin solid var(--background-ligth);
     border-radius: 20px;
     margin-bottom: 2rem;
+  }
+  article.container-multidisiplinario div.item-multidisiplinario p {
+    font-size: 1rem;
   }
   section.section {
     margin: 0;
@@ -1832,6 +1941,10 @@ section form #clear {
   }
   section.section div.title-section p {
     width: 100%;
+    font-size: 1rem;
+  }
+  section.section article.container-testimonios div.item-testimonio p {
+    font-size: 1rem;
   }
   section.section div.img-contact {
     display: flex;
@@ -1845,6 +1958,15 @@ section form #clear {
   }
   .container {
     width: 100%;
+  }
+  /* -------------------------------- contacto -------------------------------- */
+  div.hero-img-contact div.hero-img-content h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  section.contact h2 {
+    font-size: 2rem;
   }
   section form.container-contact {
     width: 90%;

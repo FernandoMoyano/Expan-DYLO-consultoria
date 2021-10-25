@@ -1890,6 +1890,14 @@ section form #clear {
   section article.container-testimonios div.item-testimonio p.paragraph-testimonio {
     width: 100%;
   }
+  div.hero-img-nosotros div.hero-img-content h1 {
+    font-size: 2rem;
+  }
+  div.hero-img-nosotros div.hero-img-content h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
   section.section {
     margin: 0rem;
   }

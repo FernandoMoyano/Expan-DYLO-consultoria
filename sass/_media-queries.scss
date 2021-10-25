@@ -747,9 +747,6 @@
 							margin: 0rem;	
 							font-size: 1rem;
 						}
-						
-
-					
 
 					}
 				}
@@ -834,6 +831,25 @@
 								width: 100%;
 							}
 						}
+					}
+				}
+			}
+		}
+	}
+
+
+	div{
+		&.hero-img-nosotros{
+			div{
+				&.hero-img-content{
+
+					h1{
+						font-size: 2rem;
+					}
+					h2{
+						font-size: 2rem;
+						color: white;
+						margin-bottom: 1rem;
 					}
 				}
 			}

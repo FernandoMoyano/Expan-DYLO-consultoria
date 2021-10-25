@@ -1760,7 +1760,7 @@ section form #clear {
     max-width: 100%;
   }
   div.header-content article.header-item h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   div.header-content article.header-item p {
     font-size: 1.0rem;
@@ -1816,6 +1816,9 @@ section form #clear {
   div.header-content article.header-item div.mas-servicios button .btn.hover-filled-slide-right:hover::before {
     width: 0%;
   }
+  section div.title-section h2 {
+    font-size: 1.5rem;
+  }
   section div.servicios-principales {
     display: flex;
     flex-wrap: wrap;
@@ -1832,6 +1835,9 @@ section form #clear {
     justify-content: center;
     margin-top: 0%;
     padding: 1rem;
+  }
+  section div.servicios-principales article.servicio h2 {
+    font-size: 1.5rem;
   }
   section div.servicios-principales article.servicio p {
     margin: 0rem;
@@ -1903,7 +1909,7 @@ section form #clear {
   section.sobre-nosotros p {
     font-size: 1rem;
   }
-  /* -------------------------------- Nosotros -------------------------------- */
+  /* -------------------------------- Equipo-------------------------------- */
   div.hero-img-equipo div.hero-img-content h2 {
     font-size: 2rem;
     color: white;
@@ -1937,7 +1943,7 @@ section form #clear {
     margin-top: 3rem;
   }
   section.section div.title-section h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   section.section div.title-section p {
     width: 100%;
@@ -1961,12 +1967,12 @@ section form #clear {
   }
   /* -------------------------------- contacto -------------------------------- */
   div.hero-img-contact div.hero-img-content h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     margin-bottom: 1rem;
   }
   section.contact h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   section form.container-contact {
     width: 90%;

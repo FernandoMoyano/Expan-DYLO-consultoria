@@ -31,6 +31,8 @@
 		}
 	}
 
+
+
 	div{
 			&.sevicios-principales{
 				display: flex;
@@ -56,6 +58,8 @@
 				p{
 					text-align: center;	
 			  }
+
+				
 		    }
 		  }	
 	   }
@@ -612,6 +616,8 @@
 	
 
 
+
+
 	.section{
 		margin: 1rem;
 		
@@ -636,7 +642,7 @@
 					max-width: 100%;
 
 					h1{
-						font-size: 1.5rem;
+						font-size: 2rem;
 					}
 					p{
 						font-size: 1.0rem;
@@ -706,6 +712,14 @@
 
 
 	section{
+
+		div{
+			&.title-section{
+				h2{
+					font-size: 1.5rem;
+				}
+			}
+		}
 		div{
 			&.servicios-principales{
 				display: flex;
@@ -725,10 +739,15 @@
 						margin-top: 0%;
 						padding: 1rem;
 
+						h2{
+							font-size: 1.5rem;
+						}
+
 						p{
 							margin: 0rem;	
 							font-size: 1rem;
 						}
+						
 
 					
 
@@ -852,7 +871,7 @@
 		}
 	}
 
-/* -------------------------------- Nosotros -------------------------------- */
+/* -------------------------------- Equipo-------------------------------- */
 	div{
 		&.hero-img-equipo{
 			div{
@@ -908,7 +927,7 @@
 					margin-top: 3rem;
 
 					h2{
-						font-size: 2rem;
+						font-size: 1.5rem;
 					}
 					p{
 					width: 100%;
@@ -959,7 +978,7 @@
 			div{
 				&.hero-img-content{
 					h2{
-						font-size: 2rem;
+						font-size: 1.5rem;
 						color: white;
 						margin-bottom: 1rem;
 					}
@@ -970,7 +989,7 @@
 	section{
 		&.contact{
 			h2{
-				font-size: 2rem;
+				font-size: 1.5rem;
 			}
 		}
 		

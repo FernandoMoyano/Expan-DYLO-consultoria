@@ -17,11 +17,13 @@
         opacity: 0.7;
         background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
 
-        h1,p{
-            width: 50%;
-            text-align: center;
-            color: white;
-        }
+      h1{
+          color: $color-button;
+      }
+
+      p{
+          color: white;
+      }
     
     } 
 

@@ -494,9 +494,11 @@ footer div.container-footer div.social a i.fab.fa-github-square.icon:hover {
   background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
 }
 
-.hero-img-nosotros .hero-img-content h1, .hero-img-nosotros .hero-img-content p {
-  width: 50%;
-  text-align: center;
+.hero-img-nosotros .hero-img-content h1 {
+  color: #f59b00;
+}
+
+.hero-img-nosotros .hero-img-content p {
   color: white;
 }
 

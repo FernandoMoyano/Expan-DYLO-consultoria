@@ -1,16 +1,4 @@
 @charset "UTF-8";
-:root {
-  --font: 'Catamaran', sans-serif;
-  --color-text: #202020;
-  --nav-heigth: 6rem;
-  --color-button: #f59b00;
-  --text-button: #fff;
-  --text-second: #3f3d56;
-  --background-ligth: #e6e6e6;
-  --white-alpha-color: rgba(255, 255, 255, 0.5);
-  --gray-dark-color: #666;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +8,7 @@
 }
 
 html {
-  font-family: var(--font);
+  font-family: "Catamaran";
   scroll-behavior: smooth;
 }
 
@@ -29,13 +17,18 @@ body {
 }
 
 h1 {
-  color: var(--color-text);
+  color: #202020;
   font-size: 4rem;
 }
 
 h2 {
-  color: var(--color-text);
+  color: #202020;
   font-size: 2.5rem;
+}
+
+p {
+  font-family: "Catamaran";
+  font-size: 1.2rem;
 }
 
 a {
@@ -47,12 +40,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-button);
+  background-color: #f59b00;
   border-radius: 50px;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: var(--text-button);
+  background-color: #fff;
   border-radius: 80px;
 }
 
@@ -74,6 +67,14 @@ body::-webkit-scrollbar-track {
   text-align: center;
   padding: 0, 3rem;
   margin-bottom: 1rem;
+}
+
+.header-content article.header-item h1 {
+  font-family: "Catamaran";
+}
+
+.header-content article.header-item p {
+  font-family: "Catamaran";
 }
 
 .header-content .mas-servicios {
@@ -177,6 +178,8 @@ body::-webkit-scrollbar-track {
 
 .servicios-principales article.servicio p {
   text-align: center;
+  font-family: "Catamaran";
+  font-size: 1.2rem;
   /*  padding-top: 1rem; */
 }
 
@@ -289,13 +292,23 @@ section.orientacion {
   margin-bottom: 2rem;
 }
 
+section.orientacion h2 {
+  font-size: 2.5rem;
+}
+
+section.orientacion p {
+  font-size: 1.2rem;
+}
+
 section.orientacion .orientacion-title {
   grid-area: h2;
   text-align: center;
+  font-family: "Catamaran";
 }
 
 section.orientacion .orientacion-paragraph {
   grid-area: paragraph;
+  font-family: "Catamaran";
 }
 
 section.orientacion article.orientacion-personales {
@@ -315,10 +328,16 @@ section.orientacion article.orientacion-personales .shadow-right {
   box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
 }
 
-section.orientacion article.orientacion-personales .orientacion h2,
-section.orientacion article.orientacion-personales p {
+section.orientacion article.orientacion-personales h2 {
+  font-family: "Catamaran";
   text-align: center;
   margin: 1rem 2rem;
+  font-size: 2.5rem;
+}
+
+section.orientacion article.orientacion-personales p {
+  font-family: "Catamaran";
+  font-size: 1.2rem;
 }
 
 section.orientacion article.orientacion-pymes {
@@ -336,6 +355,44 @@ section.orientacion article.orientacion-pymes .card-border {
 
 section.orientacion article.orientacion-pymes .shadow-right {
   box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+}
+
+section.orientacion article.orientacion-pymes h2 {
+  font-family: "Catamaran";
+}
+
+section.orientacion article.orientacion-pymes p {
+  font-size: 1.2rem;
+  font-family: "Catamaran";
+}
+
+section.orientacion section.clientes h2.title-section {
+  font-family: "Catamaran";
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+section.orientacion section.clientes p.card-text {
+  font-family: "Catamaran";
+  font-size: 1.5rem;
+}
+
+section.orientacion div.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+  color: var(--text-button);
+  width: 100%;
+  height: 6rem;
+  font-family: "Catamaran";
+}
+
+section.orientacion div.container-footer p {
+  color: white;
 }
 
 section.orientacion #btn-servicios {
@@ -1933,7 +1990,7 @@ section form #clear {
     width: 90%;
     height: 100%;
     object-fit: cover;
-    border: thin solid var(--background-ligth);
+    border: thin solid var(#e6e6e6);
     border-radius: 20px;
     margin-bottom: 2rem;
   }

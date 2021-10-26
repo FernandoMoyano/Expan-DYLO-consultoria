@@ -16,6 +16,14 @@
 			text-align: center;
 			padding: 0, 3rem;
 			margin-bottom: 1rem;
+ 
+			 h1{
+				font-family:$font;
+
+			}
+			p{
+				font-family: $font;
+			} 
 		}
 	}
 
@@ -125,6 +133,8 @@
 
 		&.servicio p {
 			text-align: center;
+			font-family: $font;
+			font-size: 1.2rem;
 			/*  padding-top: 1rem; */
 		}
 		&.servicio img {
@@ -245,14 +255,22 @@ section{
 		margin-bottom: 2rem;
 
 
+			h2{
+				font-size: 2.5rem;
+			}
 
+			p{
+				font-size: 1.2rem;
+			}
 			.orientacion-title {
 				grid-area: h2;
 				text-align: center;
+				font-family: $font;
 			}
 
 			.orientacion-paragraph {
 				grid-area: paragraph;
+				font-family: $font;
 			}
 
 		article{
@@ -273,10 +291,15 @@ section{
 							box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
 						}
 
-						.orientacion h2,
-						p {
+						 h2{
+							font-family: $font;
 							text-align: center;
 							margin: 1rem 2rem;
+							font-size: 2.5rem;
+						}
+						p{
+							font-family: $font;
+							font-size: 1.2rem;
 						}
 			}
 		}
@@ -300,7 +323,59 @@ section{
 						.shadow-right {
 							box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
 						}
+						h2{
+							font-family:$font;
+
+						}
+						p{
+							font-size: 1.2rem;
+							font-family:$font;
+						}
 			}
+		}
+
+		section{
+			&.clientes{
+				h2{
+					&.title-section{
+						font-family: $font;
+						font-size: 2.5rem;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						margin-top: 3rem;
+					}	
+						
+				}
+
+				p{
+					&.card-text{
+						font-family: $font;
+						font-size: 1.5rem;	
+					}
+				}
+
+			
+				
+			}
+		}
+
+		div{
+			&.container-footer{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+				color: var(--text-button);
+				width: 100%;
+				height: 6rem;
+				font-family: $font;
+
+				p{
+					color: white;
+				}
+			}
+			
 		}
 			
 			

@@ -19,10 +19,14 @@ div{
                 opacity: 0.7;
                 background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%); 
 
-                h1,p{
-                    width: 50%;
-                    color: white;
-                }
+               h1{
+                   color: $color-button;
+               }
+
+               p{
+                   width: 50%;
+                   color: white;
+               }
             }
         }
     }
@@ -144,7 +148,7 @@ section{
             border-radius: 20px;
             cursor: pointer;
             background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
-            color: var(--text-button);
+            color: $text-button;
         }
         #clear {
             width: 140px;
@@ -153,7 +157,7 @@ section{
             border-radius: 20px;
             cursor: pointer;
             background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
-            color: var(--text-button);
+            color:$text-button;
         }
     }
 }

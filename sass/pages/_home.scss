@@ -351,7 +351,7 @@ section{
 				p{
 					&.card-text{
 						font-family: $font;
-						font-size: 1.5rem;	
+						font-size: 1.2rem;	
 					}
 				}
 
@@ -359,25 +359,7 @@ section{
 				
 			}
 		}
-
-		div{
-			&.container-footer{
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
-				color: var(--text-button);
-				width: 100%;
-				height: 6rem;
-				font-family: $font;
-
-				p{
-					color: white;
-				}
-			}
-			
-		}
-			
+	
 			
 		#btn-servicios {
 			display: flex;
@@ -419,4 +401,84 @@ a.nav-link {
 	padding-left: 0;
 	padding-right: 0;
 }
+
+footer{
+
+	div{
+		&.container-footer{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+			color:$text-button;
+			width: 100%;
+			height: 6rem;
+			font-family: $font;
+
+			p{
+				color:$text-button;
+			}
+
+			div{
+				&.social{
+					padding: 1rem;
+					margin-right: 2rem;
+
+					a{
+						color: $color-button;
+						font-size: 25px;
+
+						&.hover{
+							transform: scale(1.5);
+						}
+						i{
+							
+								&.fab{
+									width: 3rem;
+									font-weight: 200;
+								}
+
+								&.fab.fa-facebook.icon:hover{
+									color:$color-button;
+									transform: scale(1.6);
+								}
+							
+							}	
+					}
+					a{
+						i{
+							&.fab.fa-instagram.icon:hover{
+								color:$color-button;
+								transform: scale(1.6);
+							}
+						
+						}	
+					}	
+					
+					a{
+						i{
+							&.fab.fa-linkedin.icon:hover{
+								color:$color-button;
+								transform: scale(1.6);
+							}
+						
+						}	
+					}	
+
+					a{
+						i{
+							&.fab.fa-github-square.icon:hover{
+								color:$color-button;
+								transform: scale(1.6);
+							}
+						
+						}	
+					}	
+				}
+			}
+		}
+		
+	}
+}
+
 

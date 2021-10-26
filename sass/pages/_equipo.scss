@@ -17,15 +17,22 @@
         opacity: 0.7;
         background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
         
-        h1,p{
-            width: 50%;
+        h1{
+            color:$color-button;
             text-align: center;
-            color: white;
+        
    
+        }
+
+        p{
+            width: 50%;
+            color: white;
         }
     }
   
 }
+
+
 
 section{
     &.section{
@@ -56,14 +63,14 @@ section{
                 width: 30%;
                 height: 100%;
                 object-fit: cover;
-                border: thin solid var(--background-ligth);
+                border: thin solid $background-ligth;
                 border-radius: 20px;
                 margin-bottom: 3rem;
 
               h2 {
                     text-align: center;
                     padding-bottom: 1rem;
-                    color: var(--color-text);
+                    color:$color-text;
                 }
                 img {
                     width: 100%;
@@ -79,7 +86,7 @@ section{
                     margin: auto;
                     width: 50%;
                     text-align: center;
-                    color: var(--color-text);
+                    color:$color-text;
                 }
 
             }
@@ -121,7 +128,7 @@ section{
 
                                     h2{
                                         &.section-title{
-                                            color: var(--text-button);  
+                                            color: $text-button;  
                                         }
                                     }
                                     article{
@@ -131,7 +138,7 @@ section{
                                             max-width: 800px;
                                             text-align: center;
                                             overflow-x: hidden;
-                                            background-color: var(--color-button); 
+                                            background-color:$color-button; 
                                         }
 
                                          input {
@@ -139,7 +146,7 @@ section{
                                         }
 
                                         label {
-                                            border: medium solid var(--gray-dark-color);
+                                            border: medium solid $gray-dark-color;
                                             border-radius: 50%;
                                             margin: 0 0.3rem;
                                             display: inline-block;
@@ -170,7 +177,7 @@ section{
 
                                                         h3{
                                                             &.text-first-color{
-                                                                color: var(--first-color); 
+                                                                color:$gray-dark-color; 
                                                             }
                                                         }
                                                     }

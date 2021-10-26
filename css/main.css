@@ -17,11 +17,13 @@ body {
 }
 
 h1 {
+  font-family: "Catamaran";
   color: #202020;
   font-size: 4rem;
 }
 
 h2 {
+  font-family: "Catamaran";
   color: #202020;
   font-size: 2.5rem;
 }
@@ -377,22 +379,7 @@ section.orientacion section.clientes h2.title-section {
 
 section.orientacion section.clientes p.card-text {
   font-family: "Catamaran";
-  font-size: 1.5rem;
-}
-
-section.orientacion div.container-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
-  color: var(--text-button);
-  width: 100%;
-  height: 6rem;
-  font-family: "Catamaran";
-}
-
-section.orientacion div.container-footer p {
-  color: white;
+  font-size: 1.2rem;
 }
 
 section.orientacion #btn-servicios {
@@ -430,6 +417,60 @@ a.nav-link {
   margin: 1rem;
   padding-left: 0;
   padding-right: 0;
+}
+
+footer div.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+  color: #fff;
+  width: 100%;
+  height: 6rem;
+  font-family: "Catamaran";
+}
+
+footer div.container-footer p {
+  color: #fff;
+}
+
+footer div.container-footer div.social {
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+footer div.container-footer div.social a {
+  color: #f59b00;
+  font-size: 25px;
+}
+
+footer div.container-footer div.social a.hover {
+  transform: scale(1.5);
+}
+
+footer div.container-footer div.social a i.fab {
+  width: 3rem;
+  font-weight: 200;
+}
+
+footer div.container-footer div.social a i.fab.fa-facebook.icon:hover {
+  color: #f59b00;
+  transform: scale(1.6);
+}
+
+footer div.container-footer div.social a i.fab.fa-instagram.icon:hover {
+  color: #f59b00;
+  transform: scale(1.6);
+}
+
+footer div.container-footer div.social a i.fab.fa-linkedin.icon:hover {
+  color: #f59b00;
+  transform: scale(1.6);
+}
+
+footer div.container-footer div.social a i.fab.fa-github-square.icon:hover {
+  color: #f59b00;
+  transform: scale(1.6);
 }
 
 .hero-img-nosotros {
@@ -1036,9 +1077,13 @@ section.capacitacion .hero-img-capacitacion .para-capacitacion {
   background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
 }
 
-.hero-img-equipo .hero-img-content h1, .hero-img-equipo .hero-img-content p {
-  width: 50%;
+.hero-img-equipo .hero-img-content h1 {
+  color: #f59b00;
   text-align: center;
+}
+
+.hero-img-equipo .hero-img-content p {
+  width: 50%;
   color: white;
 }
 
@@ -1071,7 +1116,7 @@ section article.container-multidisiplinario .item-multidisiplinario {
   width: 30%;
   height: 100%;
   object-fit: cover;
-  border: thin solid var(--background-ligth);
+  border: thin solid #e6e6e6;
   border-radius: 20px;
   margin-bottom: 3rem;
 }
@@ -1079,7 +1124,7 @@ section article.container-multidisiplinario .item-multidisiplinario {
 section article.container-multidisiplinario .item-multidisiplinario h2 {
   text-align: center;
   padding-bottom: 1rem;
-  color: var(--color-text);
+  color: #202020;
 }
 
 section article.container-multidisiplinario .item-multidisiplinario img {
@@ -1096,7 +1141,7 @@ section article.container-multidisiplinario .shadow-center .paragraph-multidisip
   margin: auto;
   width: 50%;
   text-align: center;
-  color: var(--color-text);
+  color: #202020;
 }
 
 section article.hero-image {
@@ -1130,7 +1175,7 @@ section article.hero-image aside.hero-image-opacity div.hero-image-content div.c
 }
 
 section article.hero-image aside.hero-image-opacity div.hero-image-content div.container h2.section-title {
-  color: var(--text-button);
+  color: #fff;
 }
 
 section article.hero-image aside.hero-image-opacity div.hero-image-content div.container article.carousel {
@@ -1139,7 +1184,7 @@ section article.hero-image aside.hero-image-opacity div.hero-image-content div.c
   max-width: 800px;
   text-align: center;
   overflow-x: hidden;
-  background-color: var(--color-button);
+  background-color: #f59b00;
 }
 
 section article.hero-image aside.hero-image-opacity div.hero-image-content div.container article input {
@@ -1147,7 +1192,7 @@ section article.hero-image aside.hero-image-opacity div.hero-image-content div.c
 }
 
 section article.hero-image aside.hero-image-opacity div.hero-image-content div.container article label {
-  border: medium solid var(--gray-dark-color);
+  border: medium solid #666;
   border-radius: 50%;
   margin: 0 0.3rem;
   display: inline-block;
@@ -1172,7 +1217,7 @@ section article.hero-image aside.hero-image-opacity div.hero-image-content div.c
 }
 
 section article.hero-image aside.hero-image-opacity div.hero-image-content div.container article ul.slides li.slide h3.text-first-color {
-  color: var(--first-color);
+  color: #666;
 }
 
 @keyframes carousel-slide {
@@ -1234,7 +1279,11 @@ div.hero-img-contact div.hero-img-content {
   background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
 }
 
-div.hero-img-contact div.hero-img-content h1, div.hero-img-contact div.hero-img-content p {
+div.hero-img-contact div.hero-img-content h1 {
+  color: #f59b00;
+}
+
+div.hero-img-contact div.hero-img-content p {
   width: 50%;
   color: white;
 }
@@ -1326,7 +1375,7 @@ section form #submit {
   border-radius: 20px;
   cursor: pointer;
   background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
-  color: var(--text-button);
+  color: #fff;
 }
 
 section form #clear {
@@ -1336,7 +1385,7 @@ section form #clear {
   border-radius: 20px;
   cursor: pointer;
   background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
-  color: var(--text-button);
+  color: #fff;
 }
 
 .container-footer {

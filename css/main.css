@@ -28,6 +28,12 @@ h2 {
   font-size: 2.5rem;
 }
 
+h3 {
+  font-family: "Catamaran";
+  color: #202020;
+  font-size: 2rem;
+}
+
 p {
   font-family: "Catamaran";
   font-size: 1.2rem;
@@ -300,6 +306,10 @@ section.orientacion h2 {
 
 section.orientacion p {
   font-size: 1.2rem;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 section.orientacion .orientacion-title {
@@ -375,6 +385,10 @@ section.orientacion section.clientes h2.title-section {
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
+}
+
+section.orientacion section.clientes h5.card-title {
+  font-family: "Catamaran";
 }
 
 section.orientacion section.clientes p.card-text {
@@ -500,6 +514,7 @@ footer div.container-footer div.social a i.fab.fa-github-square.icon:hover {
 
 .hero-img-nosotros .hero-img-content p {
   color: white;
+  width: 50%;
 }
 
 section.section {
@@ -542,6 +557,7 @@ section.sobre-nosotros .para {
   grid-area: para;
   justify-self: center;
   align-self: center;
+  width: 50%;
 }
 
 section .nosotros-item1 {
@@ -564,6 +580,10 @@ section article.description1 {
   align-self: center;
 }
 
+section article.description1 h3 {
+  text-align: center;
+}
+
 section article.shadow-right {
   box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
 }
@@ -580,6 +600,10 @@ section article.description2 {
   grid-area: description2;
   justify-self: center;
   align-self: center;
+}
+
+section article.description2 h3 {
+  text-align: center;
 }
 
 section article.shadow-left {
@@ -622,6 +646,10 @@ section article.description3 {
   grid-area: description3;
   justify-self: center;
   align-self: center;
+}
+
+section article.description3 h3 {
+  text-align: center;
 }
 
 section article.description3.shadow-right {
@@ -867,13 +895,12 @@ section article.container-testimonios {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
-  align-items: center;
   margin-bottom: 4rem;
 }
 
 section article.container-testimonios .item-testimonio {
-  background-color: var(--text-button);
-  border: thin solid var(--background-ligth);
+  background-color: #fff;
+  border: thin solid #e6e6e6;
   object-fit: cover;
   border-radius: 20px;
   width: 40%;
@@ -883,7 +910,7 @@ section article.container-testimonios .item-testimonio {
   object-fit: cover;
 }
 
-section article.container-testimonios .item-testimonio h2 {
+section article.container-testimonios .item-testimonio h3 {
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -893,7 +920,7 @@ section article.container-testimonios .shadow-center {
 }
 
 section article.container-testimonios .shadow-center .img-testimonio {
-  background-color: var(--text-second);
+  background-color: #3f3d56;
   width: 100%;
   height: auto;
   border: none;
@@ -1048,14 +1075,15 @@ section.capacitacion .hero-img-capacitacion .hero-img-content {
   background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
 }
 
-section.capacitacion .hero-img-capacitacion .hero-img-content h1 {
-  color: white;
+section.capacitacion .hero-img-capacitacion .hero-img-content h3 {
+  color: #f59b00;
   margin-bottom: 2rem;
 }
 
 section.capacitacion .hero-img-capacitacion .para-capacitacion {
   text-align: center;
   color: white;
+  font-size: 1.2rem;
 }
 
 .hero-img-equipo {
@@ -1123,7 +1151,7 @@ section article.container-multidisiplinario .item-multidisiplinario {
   margin-bottom: 3rem;
 }
 
-section article.container-multidisiplinario .item-multidisiplinario h2 {
+section article.container-multidisiplinario .item-multidisiplinario h3 {
   text-align: center;
   padding-bottom: 1rem;
   color: #202020;

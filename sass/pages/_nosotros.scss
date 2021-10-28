@@ -23,6 +23,7 @@
 
       p{
           color: white;
+          width: 50%;
       }
     
     } 
@@ -76,6 +77,7 @@ section{
                     grid-area: para;
                     justify-self: center;
                     align-self: center;
+                    width: 50%;
                 }
     }
 
@@ -104,6 +106,10 @@ section{
             grid-area: description1;
             justify-self: center;
             align-self: center;
+
+            h3{
+                text-align: center;
+            }
         }
 
          &.shadow-right {
@@ -126,6 +132,9 @@ section{
                 grid-area: description2;
                 justify-self: center;
                 align-self: center;
+                h3{
+                    text-align: center;
+                }
                 }
 
                 &.shadow-left {
@@ -172,6 +181,10 @@ section{
                 grid-area: description3;
                 justify-self: center;
                 align-self: center;
+
+                h3{
+                    text-align: center;
+                }
 
                     &.shadow-right {
                         box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);

@@ -1282,10 +1282,14 @@
 		&.hero-img-contact{
 			div{
 				&.hero-img-content{
-					h2{
-						font-size: 1.5rem;
-						color: white;
+					h1{
+						font-size: 2rem;
+						color:$color-button;
 						margin-bottom: 1rem;
+					}
+
+					p{
+						font-size: 1rem;
 					}
 				}
 			}

@@ -2296,10 +2296,13 @@ section form #clear {
     font-size: 1.5rem;
   }
   /* -------------------------------- contacto -------------------------------- */
-  div.hero-img-contact div.hero-img-content h2 {
-    font-size: 1.5rem;
-    color: white;
+  div.hero-img-contact div.hero-img-content h1 {
+    font-size: 2rem;
+    color: #f59b00;
     margin-bottom: 1rem;
+  }
+  div.hero-img-contact div.hero-img-content p {
+    font-size: 1rem;
   }
   section.contact h2 {
     font-size: 1.5rem;

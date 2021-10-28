@@ -2110,6 +2110,9 @@ section form #clear {
   section.orientacion article.orientacion-pymes p {
     font-size: 1rem;
   }
+  section.clientes h2 {
+    font-size: 1.5rem;
+  }
   section.clientes p.card-text {
     font-size: 1rem;
   }

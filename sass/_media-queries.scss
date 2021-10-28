@@ -967,6 +967,10 @@
 
 	section{
 		&.clientes{
+
+			h2{
+				font-size: 1.5rem;
+			}
 			p{
 				&.card-text{
 					font-size: 1rem;

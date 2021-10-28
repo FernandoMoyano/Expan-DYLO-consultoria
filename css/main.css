@@ -307,7 +307,7 @@ section.orientacion h2 {
 section.orientacion p {
   font-size: 1.2rem;
   margin: auto;
-  width: 50%;
+  width: 80%;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -929,10 +929,10 @@ section article.container-testimonios .shadow-center .img-testimonio {
 
 section article.container-testimonios .shadow-center .paragraph-testimonio {
   margin: auto;
-  width: 50%;
+  width: 70%;
   border-radius: 20px;
   text-align: center;
-  color: var(--color-text);
+  color: #202020;
 }
 
 section .container-paralelos {
@@ -1169,7 +1169,7 @@ section article.container-multidisiplinario .shadow-center {
 
 section article.container-multidisiplinario .shadow-center .paragraph-multidisiplinario {
   margin: auto;
-  width: 50%;
+  width: 70%;
   text-align: center;
   color: #202020;
 }
@@ -1236,8 +1236,12 @@ section article.hero-image aside.hero-image-opacity div.hero-image-content div.c
   width: 400%;
   display: flex;
   list-style: none;
-  transition: transform 0.5s ease-in-out;
-  animation: carousel-slide 12s ease-in-out 3s infinite;
+  transition: transform 0.9s ease-in-out;
+  animation: carousel-slide 12s ease-in-out 6s infinite;
+}
+
+section article.hero-image aside.hero-image-opacity div.hero-image-content div.container article ul.slides li.slide {
+  width: 60%;
 }
 
 section article.hero-image aside.hero-image-opacity div.hero-image-content div.container article ul.slides li.slide img.avatar {
@@ -1285,7 +1289,7 @@ section article.hero-image aside.hero-image-opacity div.hero-image-content div.c
 #slide-2:checked ~ .slides-nav label#dot-2,
 #slide-3:checked ~ .slides-nav label#dot-3,
 #slide-4:checked ~ .slides-nav label#dot-4 {
-  background-color: var(--gray-dark-color);
+  background-color: #666;
 }
 
 div.hero-img-contact {
@@ -1579,6 +1583,20 @@ section form #clear {
     width: 90%;
     height: auto;
   }
+  section.sobre-nosotros {
+    display: grid;
+    grid-template-areas: 'grupo-especial' 'para' 'item1' 'description1' 'item2' 'description2' 'item3' 'description3';
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, auto);
+    column-gap: 2rem;
+    row-gap: 3rem;
+  }
+  section.sobre-nosotros p.para {
+    width: 80%;
+  }
+  section.sobre-nosotros div.nosotros-item1 img {
+    margin: auto;
+  }
   div.servicios-principales {
     display: flex;
     flex-wrap: wrap;
@@ -1597,6 +1615,9 @@ section form #clear {
   }
   div.servicios-principales article.servicio p {
     margin: 0rem;
+  }
+  div.content div img.content-image-paralelos {
+    margin: 2rem;
   }
   section article.container-testimonios {
     display: flex;
@@ -1759,11 +1780,11 @@ section form #clear {
   }
   article.container-testimonios {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     margin: auto;
   }
   article.container-testimonios div.item-testimonio {
-    width: 100%;
+    width: 50%;
     background-color: var(--text-button);
     border: thin solid var(--background-ligth);
     object-fit: cover;

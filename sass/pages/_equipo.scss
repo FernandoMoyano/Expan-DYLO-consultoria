@@ -32,9 +32,8 @@
   
 }
 
-
-
 section{
+
     &.section{
         margin: 4rem 4rem;
     }
@@ -52,6 +51,7 @@ section{
             text-align: center;
         }
     }
+
     article{
         &.container-multidisiplinario{
             display: flex;
@@ -84,7 +84,7 @@ section{
 
                 .paragraph-multidisiplinario{
                     margin: auto;
-                    width: 50%;
+                    width: 70%;
                     text-align: center;
                     color:$color-text;
                 }
@@ -98,7 +98,7 @@ section{
 section{
     article{
         &.hero-image{
-            background-image: var(--hero-image);
+            background-image:var(--hero-image);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -161,11 +161,12 @@ section{
                                                 width: 400%;
                                                 display: flex;
                                                 list-style: none;
-                                                transition: transform 0.5s ease-in-out;
-                                                animation: carousel-slide 12s ease-in-out 3s infinite; 
+                                                transition: transform 0.9s ease-in-out;
+                                                animation: carousel-slide 12s ease-in-out 6s infinite; 
                                                 
                                                 li{
                                                     &.slide{
+                                                        width: 60%;
                                                     
                                                         img{
                                                             &.avatar{
@@ -231,7 +232,7 @@ section{
 #slide-2:checked ~ .slides-nav label#dot-2,
 #slide-3:checked ~ .slides-nav label#dot-3,
 #slide-4:checked ~ .slides-nav label#dot-4 {
-	background-color: var(--gray-dark-color);
+	background-color:$gray-dark-color;
 }
 
 

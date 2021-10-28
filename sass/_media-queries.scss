@@ -206,6 +206,39 @@
 		}
 	}
 
+	section{
+		&.sobre-nosotros{
+			display: grid;                                                                                                         
+			grid-template-areas:
+				'grupo-especial'
+				'para'
+				'item1'
+				'description1'
+				'item2'
+				'description2'
+				'item3'
+				'description3';
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(8, auto);
+			column-gap: 2rem;
+			row-gap: 3rem;
+
+			p{
+				&.para{
+					width: 80%;
+				}
+			}
+
+			div{
+				&.nosotros-item1{
+					img{
+						margin: auto;
+					}
+				}
+			}
+		}
+	}
+
 	div{
 		&.servicios-principales{
 			display: flex;
@@ -227,6 +260,23 @@
 					p{
 						margin: 0rem;	
 					}
+				}
+			}
+		}
+	}
+
+
+
+	div{
+		&.content{
+			div{
+				&.content-overlay{
+					
+				}
+			img{
+				&.content-image-paralelos{
+					margin: 2rem;
+				}
 				}
 			}
 		}
@@ -445,12 +495,12 @@
 	article{
 		&.container-testimonios{
 			display: flex;
-			flex-direction: column;
+			justify-content: space-around;
 			margin: auto;
 
 			div{
 					&.item-testimonio{
-						width: 100%;
+						width: 50%;
 						background-color: var(--text-button);
 						border: thin solid var(--background-ligth);
 						object-fit: cover;

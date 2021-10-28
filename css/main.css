@@ -307,7 +307,7 @@ section.orientacion h2 {
 section.orientacion p {
   font-size: 1.2rem;
   margin: auto;
-  width: 80%;
+  width: 100%;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -1473,9 +1473,9 @@ section form #clear {
     margin: auto;
   }
   div.sevicios-principales article.servicio {
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
     height: auto;
     margin: 2rem auto;
     margin-top: 5rem;
@@ -1569,6 +1569,36 @@ section form #clear {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  section.section {
+    margin: 4rem 4rem;
+  }
+  section.section div.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  section.section div.servicios-principales {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 6rem;
+  }
+  section.section div.servicios-principales article.servicio {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem 0 2rem;
+    margin: 2rem 1rem;
+    text-align: center;
+  }
+}
+
 /* ------------------------------------ 8----------------------------------- */
 @media screen and (max-width: 1199.98px) {
   /* ------------------------------------ 8 ----------------------------------- */
@@ -1616,9 +1646,6 @@ section form #clear {
   div.servicios-principales article.servicio p {
     margin: 0rem;
   }
-  div.content div img.content-image-paralelos {
-    margin: 2rem;
-  }
   section article.container-testimonios {
     display: flex;
     flex-wrap: wrap;
@@ -1647,15 +1674,64 @@ section form #clear {
     width: 100%;
     padding: 1rem;
   }
-  section article.container-testimonios div.item-testimonio h2 {
+  section article.container-testimonios div.item-testimonio h3 {
     margin: 0;
+  }
+  section.section {
+    margin: 4rem 4rem;
+  }
+  section.orientacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 'h2         h2' 'paragraph  paragraph' 'personales pymes';
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  section div.orientacion-title {
+    grid-area: h2;
+  }
+  section div.orientacion-paragraph {
+    grid-area: paragraph;
+  }
+  section article.orientacion-personales {
+    grid-area: personales;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  section article.orientacion-personales h3 {
+    text-align: center;
+  }
+  section article.orientacion-personales p {
+    width: 100%;
+  }
+  section article.orientacion-pymes {
+    grid-area: pymes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  section h3, section p {
+    text-align: center;
+    /* margin: 1rem 2rem; */
+  }
+  section img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem;
   }
   article.container-multidisiplinario {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* 	align-items: center; */
   }
   article.container-multidisiplinario div.item-multidisiplinario {
     width: 40%;
@@ -1693,7 +1769,10 @@ section form #clear {
     font-size: 1.2rem;
   }
   div.header-content article.header-item h2 {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+  }
+  div.header-content article.header-item h3 {
+    font-size: 2rem;
   }
   div.header-content article.header-item img {
     margin: auto;
@@ -1778,6 +1857,9 @@ section form #clear {
   section p {
     font-size: 1.2rem;
   }
+  section img {
+    margin-bottom: 2rem;
+  }
   article.container-testimonios {
     display: flex;
     justify-content: space-around;
@@ -1811,7 +1893,7 @@ section form #clear {
     margin-top: 3rem;
   }
   section.section div.title-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   section.section div.title-section p {
     width: 100%;
@@ -1890,6 +1972,7 @@ section form #clear {
   }
   div.servicios-principales article.servicio p {
     margin: 0rem;
+    font-size: 1rem;
   }
 }
 
@@ -1920,7 +2003,7 @@ section form #clear {
     font-size: 2rem;
   }
   div.header-content article.header-item p {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
   div.header-content article.header-item img {
     margin: auto;
@@ -1996,6 +2079,9 @@ section form #clear {
   section div.servicios-principales article.servicio h2 {
     font-size: 1.5rem;
   }
+  section div.servicios-principales article.servicio h3 {
+    font-size: 1.3rem;
+  }
   section div.servicios-principales article.servicio p {
     margin: 0rem;
     font-size: 1rem;
@@ -2010,6 +2096,18 @@ section form #clear {
     margin-bottom: 2rem;
   }
   section.orientacion p {
+    font-size: 1rem;
+  }
+  section.orientacion h2 {
+    font-size: 1.5rem;
+  }
+  section.orientacion h3 {
+    font-size: 1.3rem;
+  }
+  section.orientacion article.orientacion-personales p {
+    font-size: 1rem;
+  }
+  section.orientacion article.orientacion-pymes p {
     font-size: 1rem;
   }
   section.clientes p.card-text {
@@ -2044,14 +2142,55 @@ section form #clear {
     width: 100%;
     height: auto;
   }
+  section article.container-testimonios div.item-testimonio h3 {
+    font-size: 1.3rem;
+  }
   section article.container-testimonios div.item-testimonio p.paragraph-testimonio {
     width: 100%;
+    font-size: 1rem;
+  }
+  section article.container-testimonios div.container-paralelos h3.title {
+    font-size: 1.3rem;
+  }
+  section.capacitacion div.title-section-capacitacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  section.capacitacion div.title-section-capacitacion h2 {
+    font-size: 1.5rem;
+  }
+  section.capacitacion div.hero-img-capacitacion {
+    background-image: url(../assets/capacitación.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  section.capacitacion div.hero-img-capacitacion div.hero-img-content {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.7;
+    background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
+  }
+  section.capacitacion div.hero-img-capacitacion div.hero-img-content h2 {
+    font-size: 1.5rem;
+    color: #f59b00;
   }
   div.hero-img-nosotros div.hero-img-content h1 {
     font-size: 2rem;
   }
-  div.hero-img-nosotros div.hero-img-content h2 {
-    font-size: 2rem;
+  div.hero-img-nosotros div.hero-img-content p {
+    font-size: 1rem;
     color: white;
     margin-bottom: 1rem;
   }
@@ -2066,19 +2205,42 @@ section form #clear {
     column-gap: 2rem;
     row-gap: 1rem;
   }
+  section.sobre-nosotros h2 {
+    font-size: 1.5rem;
+  }
   section.sobre-nosotros img {
     width: 100%;
     height: auto;
     margin: 2rem auto;
   }
+  section.sobre-nosotros h3 {
+    font-size: 1.3rem;
+  }
   section.sobre-nosotros p {
     font-size: 1rem;
   }
+  footer div.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+  }
+  footer div.container-footer p {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  footer div.container-footer div.social {
+    margin: auto;
+  }
   /* -------------------------------- Equipo-------------------------------- */
-  div.hero-img-equipo div.hero-img-content h2 {
+  div.hero-img-equipo div.hero-img-content h1 {
     font-size: 2rem;
-    color: white;
+    color: #f59b00;
     margin-bottom: 1rem;
+  }
+  div.hero-img-equipo div.hero-img-content p {
+    font-size: 1rem;
   }
   article.container-multidisiplinario {
     display: flex;
@@ -2114,9 +2276,6 @@ section form #clear {
     width: 100%;
     font-size: 1rem;
   }
-  section.section article.container-testimonios div.item-testimonio p {
-    font-size: 1rem;
-  }
   section.section div.img-contact {
     display: flex;
     justify-content: center;
@@ -2129,6 +2288,9 @@ section form #clear {
   }
   .container {
     width: 100%;
+  }
+  .container h2 {
+    font-size: 1.5rem;
   }
   /* -------------------------------- contacto -------------------------------- */
   div.hero-img-contact div.hero-img-content h2 {

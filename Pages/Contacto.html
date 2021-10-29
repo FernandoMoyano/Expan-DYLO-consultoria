@@ -42,12 +42,12 @@ asesor despejara todas tus dudas inmediatamente">
 <meta name="twiter:description" content="Ponete en contacto con nosotros mediante nuestro formulario y un 
 asesor despejara todas tus dudas inmediatamente">
 <meta name="twitter:site" content="https://expandylo.000webhostapp.com/">
-<meta name="twitter:image" content="../assets/Analytics.svg">
+<meta name="twitter:image" content="https://fernandomoyano.github.io/Expan-DYLO-consultoria/assets/Analytics.svg">
 <!-- ---------------------------------- 8 ---------------------------------- -->
 <meta property="og:title" content="Expan-DYLO consultoria digital">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://expandylo.000webhostapp.com/">
-<meta property="og:image" content="../assets/Analytics.svg">
+<meta property="og:image" content="https://fernandomoyano.github.io/Expan-DYLO-consultoria/assets/Analytics.svg">
 <meta property="description" content="Ponete en contacto con nosotros mediante nuestro formulario y un 
 asesor despejara todas tus dudas inmediatamente">
 <meta property="og:image" content="assets/favicon-32x32.png">
@@ -55,7 +55,7 @@ asesor despejara todas tus dudas inmediatamente">
 <meta itemprop="name" content="Expan-DYLO consultoria digital">
 <meta itemprop="description" content="Ponete en contacto con nosotros mediante nuestro formulario y un 
 asesor despejara todas tus dudas inmediatamente">
-<meta itemprop="image" content="../assets/Analytics.svg">
+<meta itemprop="image" content="https://fernandomoyano.github.io/Expan-DYLO-consultoria/assets/Analytics.svg">
 
 
 </head>
@@ -130,7 +130,7 @@ asesor despejara todas tus dudas inmediatamente">
 
         <div class="item-contact">
           <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" placeholder="Ingresa tu nombre"
+          <input type="text" id="nombre" name="name" placeholder="Ingresa tu nombre"
           title="Nombre solo acepta letras y espacios en blanco" 
           pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"required>
         </div>
@@ -142,7 +142,8 @@ asesor despejara todas tus dudas inmediatamente">
 
         <div class="item-contact">
           <label for="email">Email *</label>
-          <input type="email" placeholder="email@email.com" required>
+          <input type="email" name="email" placeholder="email@email.com" 
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
         </div>
 
         <div class="item-contact">

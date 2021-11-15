@@ -1,13 +1,13 @@
-.hero-img-equipo{
+.hero-img-equipo {
     background-image: url(../assets/equipo.jpg);
-	width: 100%;
-	min-height: 100vh;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-    
-    .hero-img-content{
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .hero-img-content {
         min-height: inherit;
         display: flex;
         flex-direction: column;
@@ -16,35 +16,36 @@
         text-align: center;
         opacity: 0.7;
         background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
-        
-        h1{
-            color:$color-button;
+
+        h1 {
+            color: $color-button;
             text-align: center;
-        
-   
+
+
         }
 
-        p{
+        p {
             width: 50%;
             color: white;
         }
     }
-  
+
 }
 
-section{
+section {
 
-    &.section{
+    &.section {
         margin: 4rem 4rem;
     }
-    .title-section{
+
+    .title-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 3rem;
 
 
-        p{
+        p {
             width: 80%;
             margin-top: 2rem;
             margin-bottom: 2rem;
@@ -52,14 +53,14 @@ section{
         }
     }
 
-    article{
-        &.container-multidisiplinario{
+    article {
+        &.container-multidisiplinario {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             margin-bottom: 4rem;
 
-            .item-multidisiplinario{
+            .item-multidisiplinario {
                 width: 30%;
                 height: 100%;
                 object-fit: cover;
@@ -67,11 +68,12 @@ section{
                 border-radius: 20px;
                 margin-bottom: 3rem;
 
-              h3 {
+                h3 {
                     text-align: center;
                     padding-bottom: 1rem;
-                    color:$color-text;
+                    color: $color-text;
                 }
+
                 img {
                     width: 100%;
                     height: auto;
@@ -79,14 +81,14 @@ section{
                 }
             }
 
-            .shadow-center{
+            .shadow-center {
                 box-shadow: -2px 12px 38px -2px rgba(0, 0, 0, 0.7);
 
-                .paragraph-multidisiplinario{
+                .paragraph-multidisiplinario {
                     margin: auto;
                     width: 70%;
                     text-align: center;
-                    color:$color-text;
+                    color: $color-text;
                 }
 
             }
@@ -95,17 +97,17 @@ section{
     }
 }
 
-section{
-    article{
-        &.hero-image{
-            background-image:var(--hero-image);
+section {
+    article {
+        &.hero-image {
+            background-image: var(--hero-image);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             background-attachment: var(--hero-attachment);
-            
-            aside{
-                &.hero-image-opacity{
+
+            aside {
+                &.hero-image-opacity {
                     width: 100%;
                     min-height: 100vh;
                     display: flex;
@@ -113,35 +115,36 @@ section{
                     align-items: center;
                     text-align: center;
                     opacity: 0.6;
-                    background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);  
+                    background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
 
-                    div{
-                        &.hero-image-content{
+                    div {
+                        &.hero-image-content {
                             width: 100%;
-                            min-width: 320px; 
+                            min-width: 320px;
 
-                            div{
-                                &.container{
+                            div {
+                                &.container {
                                     margin-left: auto;
                                     margin-right: auto;
                                     max-width: 1200px;
 
-                                    h2{
-                                        &.section-title{
-                                            color: $text-button;  
+                                    h2 {
+                                        &.section-title {
+                                            color: $text-button;
                                         }
                                     }
-                                    article{
-                                        &.carousel{
+
+                                    article {
+                                        &.carousel {
                                             margin: 2rem auto;
                                             padding: 2rem 0;
                                             max-width: 800px;
                                             text-align: center;
                                             overflow-x: hidden;
-                                            background-color:$color-button; 
+                                            background-color: $color-button;
                                         }
 
-                                         input {
+                                        input {
                                             display: none;
                                         }
 
@@ -155,30 +158,30 @@ section{
                                             cursor: pointer;
                                         }
 
-                                        ul{
-                                            &.slides{
+                                        ul {
+                                            &.slides {
                                                 padding-left: 0;
                                                 width: 400%;
                                                 display: flex;
                                                 list-style: none;
                                                 transition: transform 0.9s ease-in-out;
-                                                animation: carousel-slide 12s ease-in-out 6s infinite; 
-                                                
-                                                li{
-                                                    &.slide{
+                                                animation: carousel-slide 12s ease-in-out 6s infinite;
+
+                                                li {
+                                                    &.slide {
                                                         width: 60%;
-                                                    
-                                                        img{
-                                                            &.avatar{
+
+                                                        img {
+                                                            &.avatar {
                                                                 border-radius: 50%;
                                                                 width: 150px;
-                                                                height: 150px; 
+                                                                height: 150px;
                                                             }
                                                         }
 
-                                                        h3{
-                                                            &.text-first-color{
-                                                                color:$gray-dark-color; 
+                                                        h3 {
+                                                            &.text-first-color {
+                                                                color: $gray-dark-color;
                                                             }
                                                         }
                                                     }
@@ -198,42 +201,42 @@ section{
 
 
 @keyframes carousel-slide {
-	0% {
-		transform: translateX(0%);
-	}
+    0% {
+        transform: translateX(0%);
+    }
 
-	25% {
-		transform: translateX(-25%);
-	}
+    25% {
+        transform: translateX(-25%);
+    }
 
-	50% {
-		transform: translateX(-50%);
-	}
-	75% {
-		transform: translateX(-75%);
-	}
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-75%);
+    }
 }
 
-#slide-1:checked ~ .slides {
-	transform: translateX(0%);
-}
-#slide-2:checked ~ .slides {
-	transform: translateX(-25%);
-}
-#slide-3:checked ~ .slides {
-	transform: translateX(-50%);
+#slide-1:checked~.slides {
+    transform: translateX(0%);
 }
 
-#slide-4:checked ~ .slides {
-	transform: translateX(-75%);
+#slide-2:checked~.slides {
+    transform: translateX(-25%);
 }
 
-#slide-1:checked ~ .slides-nav label#dot-1,
-#slide-2:checked ~ .slides-nav label#dot-2,
-#slide-3:checked ~ .slides-nav label#dot-3,
-#slide-4:checked ~ .slides-nav label#dot-4 {
-	background-color:$gray-dark-color;
+#slide-3:checked~.slides {
+    transform: translateX(-50%);
 }
 
+#slide-4:checked~.slides {
+    transform: translateX(-75%);
+}
 
-
+#slide-1:checked~.slides-nav label#dot-1,
+#slide-2:checked~.slides-nav label#dot-2,
+#slide-3:checked~.slides-nav label#dot-3,
+#slide-4:checked~.slides-nav label#dot-4 {
+    background-color: $gray-dark-color;
+}

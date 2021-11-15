@@ -1,12 +1,12 @@
 .header-content {
-	display: flex;
-	width: 90%;
-	height: 100vh;
-	justify-content: space-around;
-	margin: auto;
-	overflow: hidden;
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    justify-content: space-around;
+    margin: auto;
+    overflow: hidden;
 
-        article{
+    article {
         &.header-item {
             display: flex;
             width: 100%;
@@ -19,8 +19,8 @@
         }
     }
 
-        article{
-            &.header-item{
+    article {
+        &.header-item {
             display: flex;
             width: 100%;
             flex-direction: column;
@@ -29,234 +29,238 @@
             text-align: center;
             padding: 0, 3rem;
             margin-bottom: 1rem;
-            }
         }
+    }
 
-        .header-item h1 {
-            margin-bottom: 1rem;
-        }
-        
-        .header-item p {
-            margin-bottom: 2rem;
-  
-        }
+    .header-item h1 {
+        margin-bottom: 1rem;
+    }
+
+    .header-item p {
+        margin-bottom: 2rem;
 
     }
 
+}
 
 
-section{
-            &.section{
-                margin: 4rem 4rem;
-            
-            }
 
-            .title-section {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 3rem;
-            }
+section {
+    &.section {
+        margin: 4rem 4rem;
 
-            .servicios-principales {
-                display: flex;
-                flex-wrap: wrap;
-                width: 95%;
-                margin: auto;
-                justify-content: space-between;
-                margin-top: 6rem;
+    }
 
-                
-            .servicio {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 30%;
-                height: auto;
-                padding: 1rem 1rem 0 2rem;
-                margin: 2rem 1rem;
-                text-align: center;
+    .title-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
 
-                button{
+    .servicios-principales {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 6rem;
 
-                    &.btn {
-                        position: relative;
-                        display: inline-block;
-                        width: auto;
-                        height: auto;
-                        background-color: transparent;
-                        border: none;
-                        cursor: pointer;
-                        margin: 0px 25px 15px;
-                        min-width: 170px;
-                    }
 
-                    &.btn a {
-						position: relative;
-						display: inline-block;
-						font-size: 18px;
-						top: 0;
-						left: 0;
-						width: 100%;
-						padding: 15px 20px;
-						transition: 0.3s;
-						text-decoration: none;
-						border-radius: 20px;
-					}
-                    
+        .servicio {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: auto;
+            padding: 1rem 1rem 0 2rem;
+            margin: 2rem 1rem;
+            text-align: center;
+
+            button {
+
+                &.btn {
+                    position: relative;
+                    display: inline-block;
+                    width: auto;
+                    height: auto;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    margin: 0px 25px 15px;
+                    min-width: 170px;
                 }
 
-                    ::before,
-                    ::after {
-                    position: absolute;
-                    content: '';
-                }
-
-                    :active,
-                    :hover,
-                    :focus {
-                        outline: 0 !important;
-                        outline-offset: 0;
-                }
-
-                
-                 .btn-1::before {
-                    background-color: rgb(28, 31, 30);
-                    transition: 0.3s ease-out;
+                &.btn a {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 18px;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 15px 20px;
+                    transition: 0.3s;
+                    text-decoration: none;
                     border-radius: 20px;
                 }
-                
-                .btn-1 a {
-                    color: rgb(255, 255, 255);
-                    border: 1px solid rgb(28, 31, 30);
-                    transition: 0.2s 0.1s;
+
+            }
+
+            ::before,
+            ::after {
+                position: absolute;
+                content: '';
+            }
+
+            :active,
+            :hover,
+            :focus {
+                outline: 0 !important;
+                outline-offset: 0;
+            }
+
+
+            .btn-1::before {
+                background-color: rgb(28, 31, 30);
+                transition: 0.3s ease-out;
+                border-radius: 20px;
+            }
+
+            .btn-1 a {
+                color: rgb(255, 255, 255);
+                border: 1px solid rgb(28, 31, 30);
+                transition: 0.2s 0.1s;
+            }
+
+            .btn-1 a:hover {
+                color: rgb(28, 31, 30);
+                transition: 0.2s 0.1s;
+            }
+
+            .btn.hover-filled-slide-right::before {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            .btn.hover-filled-slide-right:hover::before {
+                width: 0%;
+            }
+
+
+            .modalmask {
+                position: fixed;
+                font-family: Arial, sans-serif;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.8);
+                z-index: 99999;
+                opacity: 0;
+                -webkit-transition: opacity 400ms ease-in;
+                -moz-transition: opacity 400ms ease-in;
+                transition: opacity 400ms ease-in;
+                pointer-events: none;
+            }
+
+            .modalmask:target {
+                opacity: 1;
+                pointer-events: auto;
+
+
+
+                .modalbox {
+                    width: 800px;
+                    position: relative;
+                    padding: 5px 20px 13px 20px;
+                    background: #fff;
+                    border-radius: 3px;
+                    -webkit-transition: all 500ms ease-in;
+                    -moz-transition: all 500ms ease-in;
+                    transition: all 500ms ease-in;
                 }
-                .btn-1 a:hover {
-                    color: rgb(28, 31, 30);
-                    transition: 0.2s 0.1s;
+
+                .rotate {
+                    margin: 10% auto;
+                    -webkit-transform: scale(-5, -5);
+                    transform: scale(-5, -5);
                 }
-                
-                .btn.hover-filled-slide-right::before {
-                    top: 0;
-                    bottom: 0;
-                    right: 0;
-                    height: 100%;
-                    width: 100%;
+
+                .resize {
+                    margin: 10% auto;
+                    width: 0;
+                    height: 0;
                 }
-                .btn.hover-filled-slide-right:hover::before {
-                    width: 0%;
+
+                .modalmask:target .movedown {
+                    margin: 10% auto;
                 }
-                
-                   
-                .modalmask {
-                    position: fixed;
-                    font-family: Arial, sans-serif;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    background: rgba(0, 0, 0, 0.8);
-                    z-index: 99999;
-                    opacity: 0;
-                    -webkit-transition: opacity 400ms ease-in;
-                    -moz-transition: opacity 400ms ease-in;
-                    transition: opacity 400ms ease-in;
-                    pointer-events: none;
+
+                .modalmask:target .rotate {
+                    transform: rotate(360deg) scale(1, 1);
+                    -webkit-transform: rotate(360deg) scale(1, 1);
                 }
-                    .modalmask:target {
-                        opacity: 1;
-                        pointer-events: auto;
-                        
-            
-                   
-                    .modalbox {
-                        width: 800px;
-                        position: relative;
-                        padding: 5px 20px 13px 20px;
-                        background: #fff;
+
+                .modalmask:target .resize {
+                    width: 400px;
+                    height: 200px;
+                }
+
+                .movedown {
+                    margin: 0 auto;
+
+                    .close {
+                        background: #606061;
+                        color: #ffffff;
+                        line-height: 25px;
+                        position: absolute;
+                        right: 1px;
+                        text-align: center;
+                        top: 1px;
+                        width: 24px;
+                        text-decoration: none;
+                        font-weight: bold;
                         border-radius: 3px;
-                        -webkit-transition: all 500ms ease-in;
-                        -moz-transition: all 500ms ease-in;
-                        transition: all 500ms ease-in;
                     }
 
-                    .rotate {
-                        margin: 10% auto;
-                        -webkit-transform: scale(-5, -5);
-                        transform: scale(-5, -5);
+                    .close:hover {
+                        background: #faac58;
+                        color: #222;
                     }
-        
-                    .resize {
-                        margin: 10% auto;
-                        width: 0;
-                        height: 0;
-                    }
-        
-                    .modalmask:target .movedown {
-                        margin: 10% auto;
-                    }
-                    .modalmask:target .rotate {
-                        transform: rotate(360deg) scale(1, 1);
-                        -webkit-transform: rotate(360deg) scale(1, 1);
-                    }
-                    
-                    .modalmask:target .resize {
-                        width: 400px;
-                        height: 200px;
-                    }
-                  
-                    .movedown {
-                        margin: 0 auto;
-                        
-                        .close {
-                            background: #606061;
-                            color: #ffffff;
-                            line-height: 25px;
-                            position: absolute;
-                            right: 1px;
-                            text-align: center;
-                            top: 1px;
-                            width: 24px;
-                            text-decoration: none;
-                            font-weight: bold;
-                            border-radius: 3px;
-                        }
-            
-                        .close:hover {
-                            background: #faac58;
-                            color: #222;
-                        }
-            
-                    }
-                
-                } 
-                
-               
+
+                }
+
+            }
+
+
         }
 
-                
+
     }
 }
-                    
+
 
 
 /* --------------------------- servicios paralelos -------------------------- */
-section{
+section {
 
-            &.section {
-                    margin: 4rem 4rem;
-            } 
+    &.section {
+        margin: 4rem 4rem;
+    }
 
-            div{
-            &.title-section {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 3rem;
-            }
+    div {
+        &.title-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
         }
+    }
 
-    article{
+    article {
 
         &.container-testimonios {
             display: flex;
@@ -264,74 +268,78 @@ section{
             flex-wrap: wrap;
             justify-content: space-around;
             margin: auto;
-            
+
             margin-bottom: 4rem;
 
-                
-        .item-testimonio {
-            background-color:$text-button;
-            border:thin solid $background-ligth;
-            object-fit: cover;
-            border-radius: 20px;
-            width: 40%;
-            margin: 2rem auto;
-            margin-bottom: 4rem;
-            height: 100%;
-            object-fit: cover;
-           
-        }
 
-        .item-testimonio h3 {
-            text-align: center;
-            padding-bottom: 1rem;
-        }
-        .shadow-center {
-             box-shadow: -2px 12px 38px -2px rgba(0, 0, 0, 0.7);
-            
+            .item-testimonio {
+                background-color: $text-button;
+                border: thin solid $background-ligth;
+                object-fit: cover;
+                border-radius: 20px;
+                width: 40%;
+                margin: 2rem auto;
+                margin-bottom: 4rem;
+                height: 100%;
+                object-fit: cover;
 
-                    .img-testimonio {
-                        background-color:$text-second;
-                        width: 100%;
-                        height: auto;
-                        border: none;
-                        border-radius: 20px;
-                    } 
+            }
 
-                  
-                    .paragraph-testimonio {
-                        margin: auto;
-                        width: 70%;
-                        border-radius: 20px;
-                        text-align: center;
-                        color:$color-text;
-                    }
-                        
+            .item-testimonio h3 {
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+
+            .shadow-center {
+                box-shadow: -2px 12px 38px -2px rgba(0, 0, 0, 0.7);
+
+
+                .img-testimonio {
+                    background-color: $text-second;
+                    width: 100%;
+                    height: auto;
+                    border: none;
+                    border-radius: 20px;
                 }
-                
-            
+
+
+                .paragraph-testimonio {
+                    margin: auto;
+                    width: 70%;
+                    border-radius: 20px;
+                    text-align: center;
+                    color: $color-text;
+                }
+
+            }
+
+
         }
-    } 
+    }
 
 
 
- .container-paralelos {
+    .container-paralelos {
         padding: 1em 0;
         float: left;
         width: 50%;
+
         .title {
             color: #1a1a1a;
             text-align: center;
             margin-bottom: 10px;
         }
     }
+
     .content {
         position: relative;
         width: 100%;
         max-width: 600px;
         margin: auto;
         overflow: hidden;
+
         .content-overlay {
-            background: rgba(245,155,0,0.8);
+            background: rgba(245, 155, 0, 0.8);
             position: absolute;
             height: 99%;
             width: 100%;
@@ -345,10 +353,12 @@ section{
             -moz-transition: all 0.4s ease-in-out 0s;
             transition: all 0.4s ease-in-out 0s;
         }
+
         &:hover {
             .content-overlay {
                 opacity: var(--text-button);
             }
+
             .content-details {
                 top: 50%;
                 left: 50%;
@@ -356,10 +366,12 @@ section{
             }
         }
     }
+
     .content-image-paralelos {
         width: 100%;
         border-radius: 20px;
     }
+
     .content-details {
         position: absolute;
         text-align: center;
@@ -376,6 +388,7 @@ section{
         -webkit-transition: all 0.3s ease-in-out 0s;
         -moz-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
+
         h3 {
             color: #fff;
             font-weight: 500;
@@ -383,34 +396,41 @@ section{
             margin-bottom: 0.5em;
             text-transform: uppercase;
         }
+
         p {
             color: #fff;
             font-size: 1rem;
         }
     }
+
     .fadeIn-bottom {
         top: 80%;
     }
+
     .fadeIn-top {
         top: 20%;
     }
+
     .fadeIn-left {
         left: 20%;
     }
+
     .fadeIn-right {
         left: 80%;
     }
+
     @media screen and (max-width: 640px) {
         .container-paralelos {
             display: block;
             width: 100%;
         }
     }
+
     @media screen and (min-width: 900px) {
         .container-paralelos {
             width: 50%;
         }
-    } 
+    }
 }
 
 
@@ -418,20 +438,20 @@ section{
 
 
 /* ------------------------------ capacitacion ------------------------------ */
-section{
+section {
 
-    &.capacitacion{
+    &.capacitacion {
         text-align: center;
 
         .title-section-capacitacion {
             display: flex;
             flex-direction: column;
-            align-items: center; 
+            align-items: center;
             margin-top: 4rem;
             margin-bottom: 3rem;
             text-align: center;
 
-            
+
         }
 
         .hero-img-capacitacion {
@@ -453,37 +473,24 @@ section{
                 opacity: 0.7;
                 background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
 
-                h2{
-                    color:$color-button;
+                h2 {
+                    color: $color-button;
                     margin-bottom: 2rem;
                 }
             }
 
 
-            .para-capacitacion{
+            .para-capacitacion {
                 text-align: center;
                 color: white;
                 font-size: 1.2rem;
             }
 
-          
+
         }
-    
+
     }
 
-       
-    
+
+
 }
-
-
-
-
-
-   
-
-   
-        
-
-       
-
-

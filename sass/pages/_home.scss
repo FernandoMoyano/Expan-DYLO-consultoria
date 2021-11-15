@@ -6,7 +6,7 @@
 	margin: auto;
 	overflow: hidden;
 
-	article{
+	article {
 		&.header-item {
 			display: flex;
 			width: 100%;
@@ -16,81 +16,85 @@
 			text-align: center;
 			padding: 0, 3rem;
 			margin-bottom: 1rem;
- 
-			 h1{
-				font-family:$font;
+
+			h1 {
+				font-family: $font;
 
 			}
-			p{
+
+			p {
 				font-family: $font;
-			} 
+			}
 		}
 	}
 
-			.mas-servicios {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				margin-top: 3rem;
-				margin-bottom: 3rem;
+	.mas-servicios {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 
-				button{
+		button {
 
-					&.btn {
-						position: relative;
-						display: inline-block;
-						width: auto;
-						height: auto;
-						background-color: transparent;
-						border: none;
-						cursor: pointer;
-						margin: 0px 25px 15px;
-						min-width: 170px;
-					}
+			&.btn {
+				position: relative;
+				display: inline-block;
+				width: auto;
+				height: auto;
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				margin: 0px 25px 15px;
+				min-width: 170px;
+			}
 
-					&.btn a {
-						position: relative;
-						display: inline-block;
-						font-size: 18px;
-						top: 0;
-						left: 0;
-						width: 100%;
-						padding: 15px 20px;
-						transition: 0.3s;
-						text-decoration: none;
-						border-radius: 20px;
-					}
-				}
-
-					
-					.btn-1::before {
-						background-color: rgb(28, 31, 30);
-						transition: 0.3s ease-out;
-						border-radius: 20px;
-					}
-					.btn-1 a {
-						color: rgb(255, 255, 255);
-						border: 1px solid rgb(28, 31, 30);
-						transition: 0.2s 0.1s;
-					}
-					.btn-1 a:hover {
-						color: rgb(28, 31, 30);
-						transition: 0.2s 0.1s;
-					}
-					
-					.btn.hover-filled-slide-right::before {
-						top: 0;
-						bottom: 0;
-						right: 0;
-						height: 100%;
-						width: 100%;
-					}
-					.btn.hover-filled-slide-right:hover::before {
-						width: 0%;
-					}
+			&.btn a {
+				position: relative;
+				display: inline-block;
+				font-size: 18px;
+				top: 0;
+				left: 0;
+				width: 100%;
+				padding: 15px 20px;
+				transition: 0.3s;
+				text-decoration: none;
+				border-radius: 20px;
+			}
 		}
 
-							
+
+		.btn-1::before {
+			background-color: rgb(28, 31, 30);
+			transition: 0.3s ease-out;
+			border-radius: 20px;
+		}
+
+		.btn-1 a {
+			color: rgb(255, 255, 255);
+			border: 1px solid rgb(28, 31, 30);
+			transition: 0.2s 0.1s;
+		}
+
+		.btn-1 a:hover {
+			color: rgb(28, 31, 30);
+			transition: 0.2s 0.1s;
+		}
+
+		.btn.hover-filled-slide-right::before {
+			top: 0;
+			bottom: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+		}
+
+		.btn.hover-filled-slide-right:hover::before {
+			width: 0%;
+		}
+	}
+
+
 }
 
 
@@ -109,8 +113,8 @@
 	justify-content: space-between;
 	margin-top: 6rem;
 
-	
-	article{
+
+	article {
 		&.servicio {
 			flex-direction: column;
 			justify-content: center;
@@ -126,7 +130,7 @@
 			box-shadow: -2px 2px 6px 1px rgba(0, 0, 0, 0.55);
 		}
 
-		
+
 		&.card-border {
 			border-radius: 15px;
 		}
@@ -135,27 +139,28 @@
 			text-align: center;
 			font-family: $font;
 			font-size: 1.2rem;
-		
+
 		}
+
 		&.servicio img {
 			width: 40%;
 			height: auto;
 		}
-		
+
 		&.h2-servicios {
 			display: flex;
 			justify-content: space-around;
 			margin: 1rem 1rem;
 		}
 	}
-		
-		#btn-servicios {
-			display: flex;
-			justify-content: space-around;
-			margin-bottom: 1rem;
-			margin-top: 2rem;
-		}
-		
+
+	#btn-servicios {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+	}
+
 
 }
 
@@ -166,10 +171,10 @@
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 
-			
-		button{
 
-	&.btn {
+	button {
+
+		&.btn {
 			position: relative;
 			display: inline-block;
 			width: auto;
@@ -195,53 +200,58 @@
 		}
 	}
 
-		
 
-			::before,
-			::after {
-				position: absolute;
-				content: '';
-				}
 
-			:active,
-			:hover,
-			:focus {
-				outline: 0 !important;
-				outline-offset: 0;
-			}
-		.btn-1::before {
-			background-color: rgb(28, 31, 30);
-			transition: 0.3s ease-out;
-			border-radius: 20px;
-		}
-		.btn-1 a {
-			color: rgb(255, 255, 255);
-			border: 1px solid rgb(28, 31, 30);
-			transition: 0.2s 0.1s;
-		}
-		.btn-1 a:hover {
-			color: rgb(28, 31, 30);
-			transition: 0.2s 0.1s;
-		}
-		
-		.btn.hover-filled-slide-right::before {
-			top: 0;
-			bottom: 0;
-			right: 0;
-			height: 100%;
-			width: 100%;
-		}
-		.btn.hover-filled-slide-right:hover::before {
-			width: 0%;
-		}
+	::before,
+	::after {
+		position: absolute;
+		content: '';
+	}
+
+	:active,
+	:hover,
+	:focus {
+		outline: 0 !important;
+		outline-offset: 0;
+	}
+
+	.btn-1::before {
+		background-color: rgb(28, 31, 30);
+		transition: 0.3s ease-out;
+		border-radius: 20px;
+	}
+
+	.btn-1 a {
+		color: rgb(255, 255, 255);
+		border: 1px solid rgb(28, 31, 30);
+		transition: 0.2s 0.1s;
+	}
+
+	.btn-1 a:hover {
+		color: rgb(28, 31, 30);
+		transition: 0.2s 0.1s;
+	}
+
+	.btn.hover-filled-slide-right::before {
+		top: 0;
+		bottom: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	.btn.hover-filled-slide-right:hover::before {
+		width: 0%;
+	}
 
 }
 
 
-section{
-	&.section{
-		padding:4rem 4rem ;
+section {
+	&.section {
+		padding: 4rem 4rem;
 	}
+
 	&.orientacion {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -255,29 +265,30 @@ section{
 		margin-bottom: 2rem;
 
 
-			h2{
-				font-size: 2.5rem;
-			}
+		h2 {
+			font-size: 2.5rem;
+		}
 
-			p{
-				font-size: 1.2rem;
-				margin: auto;
-				width: 100%;
-				text-align: center;
-				margin-bottom: 2rem;
-			}
-			.orientacion-title {
-				grid-area: h2;
-				text-align: center;
-				font-family: $font;
-			}
+		p {
+			font-size: 1.2rem;
+			margin: auto;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 2rem;
+		}
 
-			.orientacion-paragraph {
-				grid-area: paragraph;
-				font-family: $font;
-			}
+		.orientacion-title {
+			grid-area: h2;
+			text-align: center;
+			font-family: $font;
+		}
 
-		article{
+		.orientacion-paragraph {
+			grid-area: paragraph;
+			font-family: $font;
+		}
+
+		article {
 
 			&.orientacion-personales {
 				grid-area: personales;
@@ -287,97 +298,100 @@ section{
 				align-items: center;
 				margin-bottom: 2rem;
 
-						.card-border {
-							border-radius: 15px;
-						}
-					
-						.shadow-right {
-							box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
-						}
+				.card-border {
+					border-radius: 15px;
+				}
 
-						 h2{
-							font-family: $font;
-							text-align: center;
-							margin: 1rem 2rem;
-							font-size: 2.5rem;
-						}
-						p{
-							font-family: $font;
-							font-size: 1.2rem;
-						}
+				.shadow-right {
+					box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+				}
+
+				h2 {
+					font-family: $font;
+					text-align: center;
+					margin: 1rem 2rem;
+					font-size: 2.5rem;
+				}
+
+				p {
+					font-family: $font;
+					font-size: 1.2rem;
+				}
 			}
 		}
 
-		article{
+		article {
 
-			
-				&.orientacion-pymes {
-					grid-area: pymes;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					margin-bottom: 2rem;
 
-						
-						.card-border {
-							border-radius: 15px;
-						}
+			&.orientacion-pymes {
+				grid-area: pymes;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 2rem;
 
-						.shadow-right {
-							box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
-						}
-						h2{
-							font-family:$font;
 
-						}
-						p{
-							font-size: 1.2rem;
-							font-family:$font;
-						}
+				.card-border {
+					border-radius: 15px;
+				}
+
+				.shadow-right {
+					box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.55);
+				}
+
+				h2 {
+					font-family: $font;
+
+				}
+
+				p {
+					font-size: 1.2rem;
+					font-family: $font;
+				}
 			}
 		}
 
-		section{
-			&.clientes{
-				h2{
-					&.title-section{
+		section {
+			&.clientes {
+				h2 {
+					&.title-section {
 						font-family: $font;
 						font-size: 2.5rem;
 						display: flex;
 						flex-direction: column;
 						align-items: center;
 						margin-top: 3rem;
-					}	
-						
+					}
+
 				}
 
-				h5{
-					&.card-title{
+				h5 {
+					&.card-title {
 						font-family: $font;
 					}
 				}
 
-				p{
-					&.card-text{
+				p {
+					&.card-text {
 						font-family: $font;
-						font-size: 1.2rem;	
+						font-size: 1.2rem;
 					}
 				}
 
-			
-				
+
+
 			}
 		}
-	
-			
+
+
 		#btn-servicios {
 			display: flex;
 			justify-content: space-around;
 			margin-bottom: 1rem;
 			margin-top: 2rem;
-			}
-		
+		}
+
 
 	}
 }
@@ -390,6 +404,7 @@ section{
 	margin-right: 2rem;
 	margin-bottom: 0.5rem;
 }
+
 a.nav-link {
 	font-size: 21px;
 	padding: 16px;
@@ -406,89 +421,89 @@ a.nav-link {
 	margin: 2rem;
 }
 
-.row > * {
+.row>* {
 	margin: 1rem;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-footer{
+footer {
 
-	div{
-		&.container-footer{
+	div {
+		&.container-footer {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
-			color:$text-button;
+			color: $text-button;
 			width: 100%;
 			height: 6rem;
 			font-family: $font;
 
-			p{
-				color:$text-button;
+			p {
+				color: $text-button;
 			}
 
-			div{
-				&.social{
+			div {
+				&.social {
 					padding: 1rem;
 					margin-right: 2rem;
 
-					a{
+					a {
 						color: $color-button;
 						font-size: 25px;
 
-						&.hover{
+						&.hover {
 							transform: scale(1.5);
 						}
-						i{
-							
-								&.fab{
-									width: 3rem;
-									font-weight: 200;
-								}
 
-								&.fab.fa-facebook.icon:hover{
-									color:$color-button;
-									transform: scale(1.6);
-								}
-							
-							}	
+						i {
+
+							&.fab {
+								width: 3rem;
+								font-weight: 200;
+							}
+
+							&.fab.fa-facebook.icon:hover {
+								color: $color-button;
+								transform: scale(1.6);
+							}
+
+						}
 					}
-					a{
-						i{
-							&.fab.fa-instagram.icon:hover{
-								color:$color-button;
-								transform: scale(1.6);
-							}
-						
-						}	
-					}	
-					
-					a{
-						i{
-							&.fab.fa-linkedin.icon:hover{
-								color:$color-button;
-								transform: scale(1.6);
-							}
-						
-						}	
-					}	
 
-					a{
-						i{
-							&.fab.fa-github-square.icon:hover{
-								color:$color-button;
+					a {
+						i {
+							&.fab.fa-instagram.icon:hover {
+								color: $color-button;
 								transform: scale(1.6);
 							}
-						
-						}	
-					}	
+
+						}
+					}
+
+					a {
+						i {
+							&.fab.fa-linkedin.icon:hover {
+								color: $color-button;
+								transform: scale(1.6);
+							}
+
+						}
+					}
+
+					a {
+						i {
+							&.fab.fa-github-square.icon:hover {
+								color: $color-button;
+								transform: scale(1.6);
+							}
+
+						}
+					}
 				}
 			}
 		}
-		
+
 	}
 }
-
-

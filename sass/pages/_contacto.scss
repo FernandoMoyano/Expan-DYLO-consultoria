@@ -1,5 +1,5 @@
-div{
-    &.hero-img-contact{
+div {
+    &.hero-img-contact {
         background-image: url(../assets/contact.jpg);
         width: 100%;
         min-height: 100vh;
@@ -7,9 +7,9 @@ div{
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
-        
-        div{
-            &.hero-img-content{
+
+        div {
+            &.hero-img-content {
                 min-height: inherit;
                 display: flex;
                 flex-direction: column;
@@ -17,54 +17,54 @@ div{
                 align-items: center;
                 text-align: center;
                 opacity: 0.7;
-                background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%); 
+                background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
 
-               h1{
-                   color: $color-button;
-               }
+                h1 {
+                    color: $color-button;
+                }
 
-               p{
-                   width: 50%;
-                   color: white;
-               }
-            }
-        }
-    }
-}
-
-section{
-    &.section{
-        margin: 4rem 4rem;
-
-        div{
-            &.title-section{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 3rem;
-            }
-        }
-
-        div{
-            &.img-contact{
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                margin-top: 1rem;
-
-                img{
-                    width: 70%;
-                    height: auto; 
+                p {
+                    width: 50%;
+                    color: white;
                 }
             }
         }
     }
 }
 
-section{
-    &.contact{
-        h2{
-            &.title-section{
+section {
+    &.section {
+        margin: 4rem 4rem;
+
+        div {
+            &.title-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 3rem;
+            }
+        }
+
+        div {
+            &.img-contact {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 1rem;
+
+                img {
+                    width: 70%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+section {
+    &.contact {
+        h2 {
+            &.title-section {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -73,8 +73,8 @@ section{
         }
     }
 
-    form{
-        &.container-contact{
+    form {
+        &.container-contact {
             display: flex;
             flex-wrap: wrap;
             width: 60%;
@@ -85,26 +85,22 @@ section{
             border-radius: 15px;
             padding: 2rem;
             background-image: linear-gradient(to left, #e6e6e6 0%, #bdbbbe 100%),
-                radial-gradient(
-                    88% 271%,
+                radial-gradient(88% 271%,
                     rgba(255, 255, 255, 0.25) 0%,
                     rgba(254, 254, 254, 0.25) 1%,
-                    rgba(0, 0, 0, 0.25) 100%
-                ),
-                radial-gradient(
-                    50% 100%,
+                    rgba(0, 0, 0, 0.25) 100%),
+                radial-gradient(50% 100%,
                     rgba(255, 255, 255, 0.3) 0%,
-                    rgba(0, 0, 0, 0.3) 100%
-                );
-            background-blend-mode: normal, lighten, soft-light; 
+                    rgba(0, 0, 0, 0.3) 100%);
+            background-blend-mode: normal, lighten, soft-light;
         }
 
-        div{
-            &.item-contact{
+        div {
+            &.item-contact {
                 width: 45%;
-	            margin: 1rem auto;
+                margin: 1rem auto;
 
-                input{
+                input {
                     width: 100%;
                     height: 2rem;
                     cursor: pointer;
@@ -112,7 +108,7 @@ section{
                     border-radius: 20px;
                 }
 
-            select{
+                select {
                     width: 100%;
                     height: 2rem;
                     border-radius: 20px;
@@ -120,24 +116,24 @@ section{
             }
         }
 
-        div{
-            &.container-textarea{
+        div {
+            &.container-textarea {
                 width: 100%;
                 margin: 1rem auto;
                 border-radius: 20px;
 
-                textarea{
+                textarea {
                     width: 100%;
                 }
             }
         }
 
-        div{
-            &.btn-form{
+        div {
+            &.btn-form {
                 display: flex;
                 width: 50%;
                 justify-content: space-around;
-                margin-bottom: 3rem;  
+                margin-bottom: 3rem;
             }
         }
 
@@ -150,6 +146,7 @@ section{
             background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
             color: $text-button;
         }
+
         #clear {
             width: 140px;
             height: 2rem;
@@ -157,7 +154,7 @@ section{
             border-radius: 20px;
             cursor: pointer;
             background-image: linear-gradient(135deg, #3f3d56 0%, #4959a3 100%);
-            color:$text-button;
+            color: $text-button;
         }
     }
 }

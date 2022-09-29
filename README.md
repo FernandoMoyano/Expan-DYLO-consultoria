@@ -13,7 +13,7 @@
  
 ## Resources:
 
-Animate css 
+Animate css,  
 Wow.js
 
 ## This project

@@ -7,14 +7,8 @@
  <img width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
 Desarrollo web (Coder House)
 
-TECNOLOGIAS USADAS:
 
-Flexbox,
-Grid css,
-Bootstrap,
-Sass.
-
-LIBRERIAS DE ANIMACIONES :
+## LIBRERIAS DE ANIMACIONES :
 Animate css 
 Wow.js
 

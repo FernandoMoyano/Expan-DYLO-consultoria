@@ -11,8 +11,7 @@
   <img width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" /> 
  
  
-## Libreria de animaciones :
-
+## Resources:
 
 Animate css 
 Wow.js

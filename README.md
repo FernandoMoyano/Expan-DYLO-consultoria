@@ -19,7 +19,7 @@ Wow.js
 
 ## Descripcion
 
-expan-dylo is a digital consulting company that provides services so that companies
+Expan-dylo is a digital consulting company that provides services so that companies
 they can place their businesses in a virtual world full of opportunities to grow
 and expand.
 

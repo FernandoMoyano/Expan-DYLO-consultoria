@@ -1,7 +1,7 @@
 # Expan-DYLO-consultoria
 
 ## View Deployment
-(https://fernandomoyano.github.io/Expan-DYLO-consultoria/)
+https://fernandomoyano.github.io/Expan-DYLO-consultoria/
 
 
 ## Language

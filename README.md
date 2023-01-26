@@ -4,7 +4,7 @@
 https://fernandomoyano.github.io/Expan-DYLO-consultoria/
 
 
-![Expandylo-consultoria-Demo](https://user-images.githubusercontent.com/64481454/214896106-2c3d7641-3cd2-4b00-82df-b42a765be3c1.jpg)
+![Expandylo-consultoria-Demo](https://user-images.githubusercontent.com/64481454/214901323-0ec3d332-edda-4683-8aee-f3d9ddff038a.jpg)
 
 
 ## Language

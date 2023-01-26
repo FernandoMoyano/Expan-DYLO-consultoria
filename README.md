@@ -1,5 +1,9 @@
 # Expan-DYLO-consultoria
 
+## View Deployment
+(https://fernandomoyano.github.io/Expan-DYLO-consultoria/)
+
+
 ## Language
 
 <link rel="stylesheet" href="devicon.min.css">
@@ -23,5 +27,4 @@ Expan-dylo is a digital consulting company that provides services so that compan
 they can place their businesses in a virtual world full of opportunities to grow
 and expand.
 
-## View Deployment
-(https://fernandomoyano.github.io/Expan-DYLO-consultoria/)
+

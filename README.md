@@ -17,8 +17,8 @@
  
 ## Resources:
 
-Animate css,  
-Wow.js
+>Animate css,  
+>Wow.js
 
 ## Descripcion
 

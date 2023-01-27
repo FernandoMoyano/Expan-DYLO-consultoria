@@ -1,11 +1,7 @@
 # _Expan-DYLO-consultoria_
 
 ## View Deployment
-https://fernandomoyano.github.io/Expan-DYLO-consultoria/
-
-
-![Expandylo-consultoria-Demo](https://user-images.githubusercontent.com/64481454/214901323-0ec3d332-edda-4683-8aee-f3d9ddff038a.jpg)
-
+[Go to the Site](https://fernandomoyano.github.io/Expan-DYLO-consultoria/)
 
 ## Language
 
@@ -26,8 +22,8 @@ Wow.js
 
 ## Descripcion
 
-Expan-dylo is a digital consulting company that provides services so that companies
-they can place their businesses in a virtual world full of opportunities to grow
-and expand.
+>Expan-dylo is a digital consulting company that provides services so that companies
+>they can place their businesses in a virtual world full of opportunities to grow
+>and expand.
 
 

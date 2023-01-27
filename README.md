@@ -1,4 +1,4 @@
-# > Expan-DYLO-consultoria
+# Expan-DYLO-consultoria
 
 ## View Deployment
 https://fernandomoyano.github.io/Expan-DYLO-consultoria/

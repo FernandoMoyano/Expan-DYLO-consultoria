@@ -32,5 +32,28 @@ Easily customize animation settings: style, delay, length, offset, iterations
 100% MIT Licensed, not GPL. Keep your code yours.
 ES2015+, naturally Caffeine free.
 
+## _Style Guide_
+
+### _Font-family
+
+``` html
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;500;700&display=swap" rel="stylesheet" />
+```
+
+### _Colors_
+
+``` css
+$font: 'Catamaran';
+$color-text: #202020;
+$nav-heigth: 6rem;
+$color-button: #f59b00;
+$text-button: #fff;
+$text-second: #3f3d56;
+$background-ligth: #e6e6e6;
+$white-alpha-color: rgba(255, 255, 255, 0.5);
+$gray-dark-color: #666;
+```
+
+
 
 

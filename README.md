@@ -34,7 +34,7 @@ ES2015+, naturally Caffeine free.
 
 ## _Style Guide_
 
-### _Font-family
+### _Font-family_
 
 ``` html
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;500;700&display=swap" rel="stylesheet" />

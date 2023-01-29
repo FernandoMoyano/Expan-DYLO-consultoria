@@ -1,10 +1,15 @@
 # _Expan-DYLO-consultoria_
 
+## _Description_
+>Expan-dylo is a digital consulting company that provides services so that companies
+>they can place their businesses in a virtual world full of opportunities to grow
+>and expand.
+
 ## _View Deployment_
 [Go to the Site](https://fernandomoyano.github.io/Expan-DYLO-consultoria/)
 >GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
 
-## Language
+## _Language_
 
 <link rel="stylesheet" href="devicon.min.css">
 <div "style=inline_block"><br>
@@ -18,13 +23,13 @@
  
 ## _Resources_
 
->Animate css,  
->Wow.js
+[Animate css](https://animate.style/)
+>Animate.css is a library of ready-to-use cross-browser animations to use in your web projects. Ideal for emphasis, landing pages, sliders and care guide tips.
+[Wow.js](https://wowjs.uk/)
+>Reveal Animations When You Scroll. Very Animate.css Friend :-)
+Easily customize animation settings: style, delay, length, offset, iterations...
+100% MIT Licensed, not GPL. Keep your code yours.
+ES2015+, naturally Caffeine free.
 
-## _Description_
-
->Expan-dylo is a digital consulting company that provides services so that companies
->they can place their businesses in a virtual world full of opportunities to grow
->and expand.
 
 

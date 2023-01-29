@@ -25,9 +25,10 @@
 
 [Animate css](https://animate.style/)
 >Animate.css is a library of ready-to-use cross-browser animations to use in your web projects. Ideal for emphasis, landing pages, sliders and care guide tips.
+>
 [Wow.js](https://wowjs.uk/)
->Reveal Animations When You Scroll. Very Animate.css Friend :-)
-Easily customize animation settings: style, delay, length, offset, iterations...
+>Reveal Animations When You Scroll. Very Animate.css Friend
+Easily customize animation settings: style, delay, length, offset, iterations
 100% MIT Licensed, not GPL. Keep your code yours.
 ES2015+, naturally Caffeine free.
 

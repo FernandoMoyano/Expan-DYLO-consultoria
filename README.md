@@ -54,66 +54,6 @@ $white-alpha-color: rgba(255, 255, 255, 0.5);
 $gray-dark-color: #666;
 ```
 
-### _Reset css_
-``` CSS
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	list-style: none;
-}
-
-html {
-	font-family: $font;
-	scroll-behavior: smooth;
-}
-
-body {
-	height: 100%;
-}
-
-h1 {
-	font-family: $font;
-	color: $color-text;
-	font-size: 4rem;
-}
-
-h2 {
-	font-family: $font;
-	color: $color-text;
-	font-size: 2.5rem;
-}
-
-h3 {
-	font-family: $font;
-	color: $color-text;
-	font-size: 2rem;
-}
-
-p {
-	font-family: $font;
-	font-size: 1.2rem;
-}
-
-a {
-	color: white;
-}
-
-body::-webkit-scrollbar {
-	width: 9px;
-}
-
-body::-webkit-scrollbar-thumb {
-	background-color: $color-button;
-	border-radius: 50px;
-}
-
-body::-webkit-scrollbar-track {
-	background-color: $text-button;
-	border-radius: 80px;
-}
-```
 
 
 
